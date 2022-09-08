@@ -1,0 +1,12 @@
+barplots/Subject1.pdf
+*.pdf
+/barplots
+*.csv
+*.svg
+cola_results.csv
+*.pickle
+Data_files
+scripts/.nfs0000000002ae015d00001703
+__pycache__
+*.out
+/dafadf
