@@ -452,21 +452,41 @@ def multimodal_classifier(input_shape=[(2560, 1), (2560, 3)], classes=2, modalit
             merged = concatenate([X_1, X_2])
 
         if len(input_shape) == 3:
-            X_ecg_ip = Input(input_shape[0])
-            X_eda_ip = Input(input_shape[1])
-            X_eeg_ip = Input(input_shape[2])
+            X_1_ip = Input(input_shape[0])
+            X_2_ip = Input(input_shape[1])
+            X_3_ip = Input(input_shape[2])
 
-            print(X_ecg_ip.shape)
-            print(X_eda_ip.shape)
-            print(X_eeg_ip.shape)
+            print(X_1_ip.shape)
+            print(X_2_ip.shape)
+            print(X_3_ip.shape)
 
-            model_inputs = [X_ecg_ip, X_eda_ip, X_eeg_ip]
+            model_inputs = [X_1_ip, X_2_ip, X_3_ip]
 
-            X_ecg = unimodal(X_ecg_ip, 'ecg', l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
-            X_eda = unimodal(X_eda_ip, 'eda', l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
-            X_eeg = unimodal(X_eeg_ip, 'eeg', l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            X_1 = unimodal(X_1_ip, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            X_2 = unimodal(X_2_ip, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            X_3 = unimodal(X_3_ip, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
 
-            merged = concatenate([X_ecg, X_eda, X_eeg])
+            merged = concatenate([X_1, X_2, X_3])
+
+        if len(input_shape) == 4:
+            X_1_ip = Input(input_shape[0])
+            X_2_ip = Input(input_shape[1])
+            X_3_ip = Input(input_shape[2])
+            X_4_ip = Input(input_shape[3])
+
+            print(X_1_ip.shape)
+            print(X_2_ip.shape)
+            print(X_3_ip.shape)
+            print(X_4_ip.shape)
+
+            model_inputs = [X_1_ip, X_2_ip, X_3_ip, X_4_ip]
+
+            X_1 = unimodal(X_1_ip, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            X_2 = unimodal(X_2_ip, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            X_3 = unimodal(X_3_ip, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            X_4 = unimodal(X_4_ip, modality_names[3], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+
+            merged = concatenate([X_1, X_2, X_3, X_4])
 
         out = Dense(classes, activation = 'softmax', 
                     name = 'output', kernel_initializer = glrt,
@@ -487,7 +507,6 @@ def multimodal_classifier1(input_shape=[(2560, 1), (2560, 3)], classes=2, modali
         if len(input_shape) == 2:
             X_in_1 = Input(input_shape[0])
             X_in_2 = Input(input_shape[1])
-            
             
             print(X_in_1.shape)
             print(X_in_2.shape)
