@@ -196,7 +196,7 @@ for comb in num_combinations:
                                                                                     num_classes)
 
         if len(mod_names) == 4:
-            clr[i], hist, roc_auc, scores, mod_1 = train_model.training_three_modality(mod1, mod2, mod3, mod4,
+            clr[i], hist, roc_auc, scores, mod_1 = train_model.training_four_modality(mod1, mod2, mod3, mod4,
                                                                                     sub_label_ecg, i,
                                                                                     tensorbrd_dir, in_shape,
                                                                                     mod_names,

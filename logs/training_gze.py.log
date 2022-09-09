@@ -1,0 +1,1726 @@
+/home/18ab106/anaconda3/envs/env2/bin/python
+2022-09-09 12:49:37.384843: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-09-09 12:49:39.592535: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-09-09 12:49:39.593581: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2022-09-09 12:49:39.707627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:1a:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-09-09 12:49:39.709263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:1b:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-09-09 12:49:39.710897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 2 with properties: 
+pciBusID: 0000:3d:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-09-09 12:49:39.712420: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 3 with properties: 
+pciBusID: 0000:3e:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-09-09 12:49:39.714032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 4 with properties: 
+pciBusID: 0000:8b:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-09-09 12:49:39.715546: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 5 with properties: 
+pciBusID: 0000:8c:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-09-09 12:49:39.717049: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 6 with properties: 
+pciBusID: 0000:b5:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-09-09 12:49:39.718649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 7 with properties: 
+pciBusID: 0000:b6:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-09-09 12:49:39.718671: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-09-09 12:49:39.721155: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-09-09 12:49:39.721203: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-09-09 12:49:39.723190: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-09-09 12:49:39.723700: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-09-09 12:49:39.725663: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-09-09 12:49:39.727001: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-09-09 12:49:39.730809: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-09-09 12:49:39.755138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2022-09-09 12:49:39.755487: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-09-09 12:49:39.755638: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-09-09 12:49:39.757368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:8b:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-09-09 12:49:39.757388: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-09-09 12:49:39.757406: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-09-09 12:49:39.757413: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2022-09-09 12:49:39.757420: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-09-09 12:49:39.757427: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-09-09 12:49:39.757433: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-09-09 12:49:39.757439: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2022-09-09 12:49:39.757446: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-09-09 12:49:39.760762: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 4
+2022-09-09 12:49:39.760795: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2022-09-09 12:49:40.385531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-09-09 12:49:40.385584: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      4 
+2022-09-09 12:49:40.385589: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 4:   N 
+2022-09-09 12:49:40.390811: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 42531 MB memory) -> physical GPU (device: 4, name: Quadro RTX 8000, pci bus id: 0000:8b:00.0, compute capability: 7.5)
+8 Physical GPUs, 1 Logical GPUs
+/home/18ab106/anaconda3/envs/env2/lib/python3.8/site-packages/tensorflow/python/keras/backend.py:434: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn('`tf.keras.backend.set_learning_phase` is deprecated and '
+/home/18ab106/anaconda3/envs/env2/bin/python
+Visible devices cannot be modified after being initialized
+2.4.0
+2.4.0
+--------------------------------------------------------------------------
+Training for Type FF, combination gze
+--------------------------------------------------------------------------
+
+Model files saved in:  /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942
+Tensorboard files for model saved in:  /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b
+Model report files saved in :  /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/reports
+Model weights saved in :  /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/model_weights
+2022-09-09 12:49:42.215206: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:49:42.215244: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:49:42.215293: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1365] Profiler found 8 GPUs
+2022-09-09 12:49:42.216686: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcupti.so.10.1
+2022-09-09 12:49:42.317262: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_INSUFFICIENT_PRIVILEGES
+2022-09-09 12:49:42.317359: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1105
+2022-09-09 12:49:42.996838: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2022-09-09 12:49:43.015167: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2300000000 Hz
+Epoch 1/300
+2022-09-09 12:49:44.145853: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2022-09-09 12:49:44.426279: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2022-09-09 12:49:46.105482: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:49:46.105517: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:49:46.107220: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_INSUFFICIENT_PRIVILEGES
+2022-09-09 12:49:46.155244: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:49:46.157396: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:49:46.169362: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:49:46.184047: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46
+2022-09-09 12:49:46.188111: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46/sasquatch.trace.json.gz
+2022-09-09 12:49:46.205469: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46
+2022-09-09 12:49:46.211327: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46/sasquatch.memory_profile.json.gz
+2022-09-09 12:49:46.225585: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-124942/train/plugins/profile/2022_09_09_12_49_46/sasquatch.kernel_stats.pb
+
+24/24 - 5s - loss: 2.5054 - acc: 0.5021 - f1_score: 0.3343 - val_loss: 2.5051 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 2/300
+24/24 - 1s - loss: 2.5053 - acc: 0.5021 - f1_score: 0.3343 - val_loss: 2.5050 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 3/300
+24/24 - 1s - loss: 2.5052 - acc: 0.5021 - f1_score: 0.3343 - val_loss: 2.5049 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 4/300
+24/24 - 1s - loss: 2.5051 - acc: 0.5023 - f1_score: 0.3346 - val_loss: 2.5048 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 5/300
+24/24 - 1s - loss: 2.5050 - acc: 0.5023 - f1_score: 0.3346 - val_loss: 2.5047 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 6/300
+24/24 - 1s - loss: 2.5049 - acc: 0.5023 - f1_score: 0.3346 - val_loss: 2.5046 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 7/300
+24/24 - 1s - loss: 2.5048 - acc: 0.5023 - f1_score: 0.3346 - val_loss: 2.5045 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 8/300
+24/24 - 1s - loss: 2.5047 - acc: 0.5025 - f1_score: 0.3350 - val_loss: 2.5044 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 9/300
+24/24 - 1s - loss: 2.5046 - acc: 0.5025 - f1_score: 0.3350 - val_loss: 2.5043 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 10/300
+24/24 - 1s - loss: 2.5045 - acc: 0.5023 - f1_score: 0.3349 - val_loss: 2.5042 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 11/300
+24/24 - 1s - loss: 2.5044 - acc: 0.5021 - f1_score: 0.3349 - val_loss: 2.5041 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 12/300
+24/24 - 1s - loss: 2.5043 - acc: 0.5026 - f1_score: 0.3360 - val_loss: 2.5040 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 13/300
+24/24 - 1s - loss: 2.5042 - acc: 0.5025 - f1_score: 0.3356 - val_loss: 2.5039 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 14/300
+24/24 - 1s - loss: 2.5041 - acc: 0.5021 - f1_score: 0.3360 - val_loss: 2.5038 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 15/300
+24/24 - 1s - loss: 2.5040 - acc: 0.5021 - f1_score: 0.3360 - val_loss: 2.5037 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 16/300
+24/24 - 1s - loss: 2.5039 - acc: 0.5016 - f1_score: 0.3358 - val_loss: 2.5036 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 17/300
+24/24 - 1s - loss: 2.5038 - acc: 0.5018 - f1_score: 0.3362 - val_loss: 2.5035 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 18/300
+24/24 - 1s - loss: 2.5037 - acc: 0.5018 - f1_score: 0.3362 - val_loss: 2.5034 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 19/300
+24/24 - 1s - loss: 2.5036 - acc: 0.5018 - f1_score: 0.3373 - val_loss: 2.5033 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 20/300
+24/24 - 1s - loss: 2.5035 - acc: 0.5020 - f1_score: 0.3377 - val_loss: 2.5032 - val_acc: 0.4828 - val_f1_score: 0.3256
+Epoch 21/300
+24/24 - 1s - loss: 2.5034 - acc: 0.5013 - f1_score: 0.3377 - val_loss: 2.5031 - val_acc: 0.4828 - val_f1_score: 0.3256
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.48      0.65       377
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.48       377
+   macro avg       0.50      0.24      0.33       377
+weighted avg       1.00      0.48      0.65       377
+
+2022-09-09 12:50:11.628959: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+2022-09-09 12:50:13.154141: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:50:13.154168: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:50:13.154236: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:50:13.154251: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1106
+Epoch 1/300
+2022-09-09 12:50:14.677708: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:50:14.677743: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:50:14.677795: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:50:14.778114: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:50:14.780900: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:50:14.793353: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:50:14.805975: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14
+2022-09-09 12:50:14.812599: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14/sasquatch.trace.json.gz
+2022-09-09 12:50:14.833121: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14
+2022-09-09 12:50:14.839483: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14/sasquatch.memory_profile.json.gz
+2022-09-09 12:50:14.860890: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125013/train/plugins/profile/2022_09_09_12_50_14/sasquatch.kernel_stats.pb
+
+25/25 - 3s - loss: 2.5051 - acc: 0.5061 - f1_score: 0.3360 - val_loss: 2.5219 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 2/300
+25/25 - 1s - loss: 2.5050 - acc: 0.5061 - f1_score: 0.3360 - val_loss: 2.5217 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 3/300
+25/25 - 1s - loss: 2.5049 - acc: 0.5061 - f1_score: 0.3360 - val_loss: 2.5215 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 4/300
+25/25 - 1s - loss: 2.5048 - acc: 0.5061 - f1_score: 0.3360 - val_loss: 2.5213 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 5/300
+25/25 - 1s - loss: 2.5047 - acc: 0.5061 - f1_score: 0.3360 - val_loss: 2.5211 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 6/300
+25/25 - 1s - loss: 2.5046 - acc: 0.5061 - f1_score: 0.3360 - val_loss: 2.5209 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 7/300
+25/25 - 1s - loss: 2.5045 - acc: 0.5061 - f1_score: 0.3360 - val_loss: 2.5207 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 8/300
+25/25 - 1s - loss: 2.5044 - acc: 0.5061 - f1_score: 0.3360 - val_loss: 2.5205 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 9/300
+25/25 - 1s - loss: 2.5043 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5204 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 10/300
+25/25 - 1s - loss: 2.5042 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5202 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 11/300
+25/25 - 1s - loss: 2.5041 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5200 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 12/300
+25/25 - 1s - loss: 2.5040 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5199 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 13/300
+25/25 - 1s - loss: 2.5039 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5197 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 14/300
+25/25 - 1s - loss: 2.5038 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5196 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 15/300
+25/25 - 1s - loss: 2.5037 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5194 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 16/300
+25/25 - 1s - loss: 2.5036 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5192 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 17/300
+25/25 - 1s - loss: 2.5035 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5191 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 18/300
+25/25 - 1s - loss: 2.5034 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5189 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 19/300
+25/25 - 1s - loss: 2.5033 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5188 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 20/300
+25/25 - 1s - loss: 2.5032 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5186 - val_acc: 0.1429 - val_f1_score: 0.1250
+Epoch 21/300
+25/25 - 1s - loss: 2.5031 - acc: 0.5063 - f1_score: 0.3364 - val_loss: 2.5185 - val_acc: 0.1429 - val_f1_score: 0.1250
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.14      0.25        91
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.14        91
+   macro avg       0.50      0.07      0.12        91
+weighted avg       1.00      0.14      0.25        91
+
+2022-09-09 12:50:41.785263: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:50:41.785289: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:50:41.785356: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:50:41.785369: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1175
+Epoch 1/300
+2022-09-09 12:50:43.312411: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:50:43.312443: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:50:43.312497: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:50:43.417164: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:50:43.419981: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:50:43.432178: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:50:43.442803: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43
+2022-09-09 12:50:43.447674: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43/sasquatch.trace.json.gz
+2022-09-09 12:50:43.465558: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43
+2022-09-09 12:50:43.471334: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43/sasquatch.memory_profile.json.gz
+2022-09-09 12:50:43.483714: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125041/train/plugins/profile/2022_09_09_12_50_43/sasquatch.kernel_stats.pb
+
+24/24 - 3s - loss: 2.5059 - acc: 0.4862 - f1_score: 0.3271 - val_loss: 2.4953 - val_acc: 0.7692 - val_f1_score: 0.4348
+Epoch 2/300
+24/24 - 1s - loss: 2.5058 - acc: 0.4864 - f1_score: 0.3275 - val_loss: 2.4957 - val_acc: 0.7692 - val_f1_score: 0.4348
+Epoch 3/300
+24/24 - 1s - loss: 2.5057 - acc: 0.4865 - f1_score: 0.3279 - val_loss: 2.4960 - val_acc: 0.7692 - val_f1_score: 0.4348
+Epoch 4/300
+24/24 - 1s - loss: 2.5055 - acc: 0.4865 - f1_score: 0.3279 - val_loss: 2.4963 - val_acc: 0.7663 - val_f1_score: 0.4338
+Epoch 5/300
+24/24 - 1s - loss: 2.5054 - acc: 0.4864 - f1_score: 0.3281 - val_loss: 2.4966 - val_acc: 0.7633 - val_f1_score: 0.4329
+Epoch 6/300
+24/24 - 1s - loss: 2.5053 - acc: 0.4865 - f1_score: 0.3290 - val_loss: 2.4969 - val_acc: 0.7515 - val_f1_score: 0.4291
+Epoch 7/300
+24/24 - 1s - loss: 2.5051 - acc: 0.4869 - f1_score: 0.3310 - val_loss: 2.4972 - val_acc: 0.7485 - val_f1_score: 0.4393
+Epoch 8/300
+24/24 - 1s - loss: 2.5050 - acc: 0.4865 - f1_score: 0.3314 - val_loss: 2.4974 - val_acc: 0.7426 - val_f1_score: 0.4371
+Epoch 9/300
+24/24 - 1s - loss: 2.5049 - acc: 0.4865 - f1_score: 0.3323 - val_loss: 2.4977 - val_acc: 0.7485 - val_f1_score: 0.4701
+Epoch 10/300
+24/24 - 1s - loss: 2.5048 - acc: 0.4862 - f1_score: 0.3340 - val_loss: 2.4979 - val_acc: 0.7426 - val_f1_score: 0.4852
+Epoch 11/300
+24/24 - 1s - loss: 2.5046 - acc: 0.4865 - f1_score: 0.3374 - val_loss: 2.4982 - val_acc: 0.7278 - val_f1_score: 0.4931
+Epoch 12/300
+24/24 - 1s - loss: 2.5045 - acc: 0.4869 - f1_score: 0.3417 - val_loss: 2.4984 - val_acc: 0.7160 - val_f1_score: 0.5005
+Epoch 13/300
+24/24 - 1s - loss: 2.5044 - acc: 0.4867 - f1_score: 0.3452 - val_loss: 2.4986 - val_acc: 0.7012 - val_f1_score: 0.5043
+Epoch 14/300
+24/24 - 1s - loss: 2.5043 - acc: 0.4860 - f1_score: 0.3487 - val_loss: 2.4989 - val_acc: 0.6657 - val_f1_score: 0.4828
+Epoch 15/300
+24/24 - 1s - loss: 2.5042 - acc: 0.4862 - f1_score: 0.3567 - val_loss: 2.4991 - val_acc: 0.6420 - val_f1_score: 0.4889
+Epoch 16/300
+24/24 - 1s - loss: 2.5041 - acc: 0.4872 - f1_score: 0.3704 - val_loss: 2.4993 - val_acc: 0.6213 - val_f1_score: 0.4970
+Epoch 17/300
+24/24 - 1s - loss: 2.5040 - acc: 0.4865 - f1_score: 0.3760 - val_loss: 2.4995 - val_acc: 0.6065 - val_f1_score: 0.4947
+Epoch 18/300
+24/24 - 1s - loss: 2.5038 - acc: 0.4880 - f1_score: 0.3881 - val_loss: 2.4997 - val_acc: 0.5799 - val_f1_score: 0.4898
+Epoch 19/300
+24/24 - 1s - loss: 2.5037 - acc: 0.4888 - f1_score: 0.4015 - val_loss: 2.4999 - val_acc: 0.5740 - val_f1_score: 0.4945
+Epoch 20/300
+24/24 - 1s - loss: 2.5036 - acc: 0.4906 - f1_score: 0.4135 - val_loss: 2.5001 - val_acc: 0.5533 - val_f1_score: 0.4900
+Epoch 21/300
+24/24 - 1s - loss: 2.5035 - acc: 0.4960 - f1_score: 0.4344 - val_loss: 2.5002 - val_acc: 0.5178 - val_f1_score: 0.4662
+Epoch 22/300
+24/24 - 1s - loss: 2.5034 - acc: 0.4994 - f1_score: 0.4457 - val_loss: 2.5004 - val_acc: 0.4882 - val_f1_score: 0.4462
+Epoch 23/300
+24/24 - 1s - loss: 2.5033 - acc: 0.5016 - f1_score: 0.4585 - val_loss: 2.5006 - val_acc: 0.4645 - val_f1_score: 0.4301
+Epoch 24/300
+24/24 - 1s - loss: 2.5032 - acc: 0.5022 - f1_score: 0.4696 - val_loss: 2.5007 - val_acc: 0.4734 - val_f1_score: 0.4453
+Epoch 25/300
+24/24 - 1s - loss: 2.5031 - acc: 0.5050 - f1_score: 0.4779 - val_loss: 2.5009 - val_acc: 0.4645 - val_f1_score: 0.4398
+Epoch 26/300
+24/24 - 1s - loss: 2.5030 - acc: 0.5061 - f1_score: 0.4876 - val_loss: 2.5010 - val_acc: 0.4586 - val_f1_score: 0.4416
+Epoch 27/300
+24/24 - 1s - loss: 2.5029 - acc: 0.5061 - f1_score: 0.4928 - val_loss: 2.5012 - val_acc: 0.4438 - val_f1_score: 0.4303
+Epoch 28/300
+24/24 - 1s - loss: 2.5028 - acc: 0.5130 - f1_score: 0.5032 - val_loss: 2.5013 - val_acc: 0.4290 - val_f1_score: 0.4196
+Epoch 29/300
+24/24 - 1s - loss: 2.5027 - acc: 0.5118 - f1_score: 0.5057 - val_loss: 2.5014 - val_acc: 0.4172 - val_f1_score: 0.4116
+Epoch 30/300
+24/24 - 1s - loss: 2.5026 - acc: 0.5136 - f1_score: 0.5107 - val_loss: 2.5015 - val_acc: 0.4024 - val_f1_score: 0.3988
+Epoch 31/300
+24/24 - 1s - loss: 2.5025 - acc: 0.5169 - f1_score: 0.5159 - val_loss: 2.5016 - val_acc: 0.4172 - val_f1_score: 0.4149
+Epoch 32/300
+24/24 - 1s - loss: 2.5024 - acc: 0.5164 - f1_score: 0.5162 - val_loss: 2.5017 - val_acc: 0.4112 - val_f1_score: 0.4094
+Epoch 33/300
+24/24 - 1s - loss: 2.5023 - acc: 0.5220 - f1_score: 0.5219 - val_loss: 2.5019 - val_acc: 0.4142 - val_f1_score: 0.4132
+Restoring model weights from the end of the best epoch.
+Epoch 00033: early stopping
+              precision    recall  f1-score   support
+
+           0       0.87      0.77      0.82       291
+           1       0.15      0.26      0.19        47
+
+    accuracy                           0.70       338
+   macro avg       0.51      0.51      0.50       338
+weighted avg       0.77      0.70      0.73       338
+
+2022-09-09 12:51:23.530118: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:51:23.530151: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:51:23.530226: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:51:23.530243: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1194
+Epoch 1/300
+2022-09-09 12:51:25.156742: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:51:25.156776: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:51:25.156830: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:51:25.258509: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:51:25.261179: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:51:25.273748: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:51:25.284050: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25
+2022-09-09 12:51:25.288331: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25/sasquatch.trace.json.gz
+2022-09-09 12:51:25.306043: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25
+2022-09-09 12:51:25.311978: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25/sasquatch.memory_profile.json.gz
+2022-09-09 12:51:25.326058: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125123/train/plugins/profile/2022_09_09_12_51_25/sasquatch.kernel_stats.pb
+
+24/24 - 3s - loss: 2.5047 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5159 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 2/300
+24/24 - 1s - loss: 2.5045 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5160 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 3/300
+24/24 - 1s - loss: 2.5044 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5161 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 4/300
+24/24 - 1s - loss: 2.5043 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5162 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 5/300
+24/24 - 1s - loss: 2.5042 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5164 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 6/300
+24/24 - 1s - loss: 2.5041 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5165 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 7/300
+24/24 - 1s - loss: 2.5040 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5166 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 8/300
+24/24 - 1s - loss: 2.5039 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5167 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 9/300
+24/24 - 1s - loss: 2.5038 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5168 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 10/300
+24/24 - 1s - loss: 2.5037 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5169 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 11/300
+24/24 - 1s - loss: 2.5036 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5170 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 12/300
+24/24 - 1s - loss: 2.5035 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5171 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 13/300
+24/24 - 1s - loss: 2.5034 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5172 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 14/300
+24/24 - 1s - loss: 2.5033 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5172 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 15/300
+24/24 - 1s - loss: 2.5032 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5173 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 16/300
+24/24 - 1s - loss: 2.5031 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5174 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 17/300
+24/24 - 1s - loss: 2.5030 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5175 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 18/300
+24/24 - 1s - loss: 2.5029 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5175 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 19/300
+24/24 - 1s - loss: 2.5028 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5176 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 20/300
+24/24 - 1s - loss: 2.5027 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5176 - val_acc: 0.2188 - val_f1_score: 0.1795
+Epoch 21/300
+24/24 - 1s - loss: 2.5026 - acc: 0.5204 - f1_score: 0.3423 - val_loss: 2.5177 - val_acc: 0.2188 - val_f1_score: 0.1795
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.22      0.36       416
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.22       416
+   macro avg       0.50      0.11      0.18       416
+weighted avg       1.00      0.22      0.36       416
+
+2022-09-09 12:51:51.677045: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:51:51.677071: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:51:51.677136: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:51:51.677150: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1337
+Epoch 1/300
+2022-09-09 12:51:53.197053: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:51:53.197085: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:51:53.197137: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:51:53.296592: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:51:53.299208: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:51:53.311421: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:51:53.319647: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53
+2022-09-09 12:51:53.326131: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53/sasquatch.trace.json.gz
+2022-09-09 12:51:53.342783: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53
+2022-09-09 12:51:53.351299: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53/sasquatch.memory_profile.json.gz
+2022-09-09 12:51:53.364439: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125151/train/plugins/profile/2022_09_09_12_51_53/sasquatch.kernel_stats.pb
+
+24/24 - 3s - loss: 2.5060 - acc: 0.4837 - f1_score: 0.3260 - val_loss: 2.4979 - val_acc: 0.7222 - val_f1_score: 0.4194
+Epoch 2/300
+24/24 - 1s - loss: 2.5058 - acc: 0.4839 - f1_score: 0.3264 - val_loss: 2.4983 - val_acc: 0.7222 - val_f1_score: 0.4194
+Epoch 3/300
+24/24 - 1s - loss: 2.5057 - acc: 0.4841 - f1_score: 0.3267 - val_loss: 2.4986 - val_acc: 0.7222 - val_f1_score: 0.4194
+Epoch 4/300
+24/24 - 1s - loss: 2.5055 - acc: 0.4837 - f1_score: 0.3266 - val_loss: 2.4989 - val_acc: 0.7222 - val_f1_score: 0.4267
+Epoch 5/300
+24/24 - 1s - loss: 2.5054 - acc: 0.4839 - f1_score: 0.3275 - val_loss: 2.4991 - val_acc: 0.7222 - val_f1_score: 0.4267
+Epoch 6/300
+24/24 - 1s - loss: 2.5052 - acc: 0.4834 - f1_score: 0.3284 - val_loss: 2.4994 - val_acc: 0.7179 - val_f1_score: 0.4252
+Epoch 7/300
+24/24 - 1s - loss: 2.5051 - acc: 0.4829 - f1_score: 0.3293 - val_loss: 2.4997 - val_acc: 0.7158 - val_f1_score: 0.4244
+Epoch 8/300
+24/24 - 1s - loss: 2.5050 - acc: 0.4834 - f1_score: 0.3317 - val_loss: 2.4999 - val_acc: 0.7158 - val_f1_score: 0.4314
+Epoch 9/300
+24/24 - 1s - loss: 2.5048 - acc: 0.4832 - f1_score: 0.3341 - val_loss: 2.5002 - val_acc: 0.7115 - val_f1_score: 0.4297
+Epoch 10/300
+24/24 - 1s - loss: 2.5047 - acc: 0.4819 - f1_score: 0.3380 - val_loss: 2.5004 - val_acc: 0.7115 - val_f1_score: 0.4297
+Epoch 11/300
+24/24 - 1s - loss: 2.5046 - acc: 0.4821 - f1_score: 0.3433 - val_loss: 2.5006 - val_acc: 0.7051 - val_f1_score: 0.4272
+Epoch 12/300
+24/24 - 1s - loss: 2.5045 - acc: 0.4824 - f1_score: 0.3485 - val_loss: 2.5008 - val_acc: 0.6966 - val_f1_score: 0.4238
+Epoch 13/300
+24/24 - 1s - loss: 2.5043 - acc: 0.4806 - f1_score: 0.3594 - val_loss: 2.5010 - val_acc: 0.6902 - val_f1_score: 0.4336
+Epoch 14/300
+24/24 - 1s - loss: 2.5042 - acc: 0.4802 - f1_score: 0.3684 - val_loss: 2.5012 - val_acc: 0.6816 - val_f1_score: 0.4298
+Epoch 15/300
+24/24 - 1s - loss: 2.5041 - acc: 0.4804 - f1_score: 0.3822 - val_loss: 2.5014 - val_acc: 0.6688 - val_f1_score: 0.4243
+Epoch 16/300
+24/24 - 1s - loss: 2.5040 - acc: 0.4797 - f1_score: 0.3901 - val_loss: 2.5015 - val_acc: 0.6645 - val_f1_score: 0.4279
+Epoch 17/300
+24/24 - 1s - loss: 2.5039 - acc: 0.4807 - f1_score: 0.4021 - val_loss: 2.5017 - val_acc: 0.6453 - val_f1_score: 0.4242
+Epoch 18/300
+24/24 - 1s - loss: 2.5038 - acc: 0.4866 - f1_score: 0.4251 - val_loss: 2.5019 - val_acc: 0.6239 - val_f1_score: 0.4278
+Epoch 19/300
+24/24 - 1s - loss: 2.5036 - acc: 0.4901 - f1_score: 0.4422 - val_loss: 2.5021 - val_acc: 0.6175 - val_f1_score: 0.4370
+Epoch 20/300
+24/24 - 1s - loss: 2.5035 - acc: 0.4887 - f1_score: 0.4482 - val_loss: 2.5023 - val_acc: 0.5897 - val_f1_score: 0.4434
+Epoch 21/300
+24/24 - 1s - loss: 2.5034 - acc: 0.4902 - f1_score: 0.4609 - val_loss: 2.5024 - val_acc: 0.5769 - val_f1_score: 0.4541
+Epoch 22/300
+24/24 - 1s - loss: 2.5033 - acc: 0.4944 - f1_score: 0.4741 - val_loss: 2.5026 - val_acc: 0.5641 - val_f1_score: 0.4594
+Epoch 23/300
+24/24 - 1s - loss: 2.5032 - acc: 0.4986 - f1_score: 0.4851 - val_loss: 2.5028 - val_acc: 0.5470 - val_f1_score: 0.4530
+Epoch 24/300
+24/24 - 1s - loss: 2.5031 - acc: 0.5031 - f1_score: 0.4966 - val_loss: 2.5029 - val_acc: 0.5278 - val_f1_score: 0.4425
+Epoch 25/300
+24/24 - 1s - loss: 2.5030 - acc: 0.5069 - f1_score: 0.5029 - val_loss: 2.5030 - val_acc: 0.4957 - val_f1_score: 0.4309
+Epoch 26/300
+24/24 - 1s - loss: 2.5029 - acc: 0.5069 - f1_score: 0.5055 - val_loss: 2.5031 - val_acc: 0.4979 - val_f1_score: 0.4462
+Epoch 27/300
+24/24 - 1s - loss: 2.5028 - acc: 0.5086 - f1_score: 0.5084 - val_loss: 2.5033 - val_acc: 0.4744 - val_f1_score: 0.4319
+Epoch 28/300
+24/24 - 1s - loss: 2.5026 - acc: 0.5168 - f1_score: 0.5163 - val_loss: 2.5034 - val_acc: 0.4744 - val_f1_score: 0.4424
+Epoch 29/300
+24/24 - 1s - loss: 2.5025 - acc: 0.5184 - f1_score: 0.5173 - val_loss: 2.5035 - val_acc: 0.4594 - val_f1_score: 0.4330
+Epoch 30/300
+24/24 - 1s - loss: 2.5024 - acc: 0.5203 - f1_score: 0.5175 - val_loss: 2.5036 - val_acc: 0.4444 - val_f1_score: 0.4241
+Epoch 31/300
+24/24 - 1s - loss: 2.5023 - acc: 0.5241 - f1_score: 0.5186 - val_loss: 2.5037 - val_acc: 0.4402 - val_f1_score: 0.4266
+Epoch 32/300
+24/24 - 1s - loss: 2.5022 - acc: 0.5278 - f1_score: 0.5183 - val_loss: 2.5038 - val_acc: 0.4209 - val_f1_score: 0.4122
+Epoch 33/300
+24/24 - 1s - loss: 2.5021 - acc: 0.5279 - f1_score: 0.5139 - val_loss: 2.5039 - val_acc: 0.3953 - val_f1_score: 0.3902
+Epoch 34/300
+24/24 - 1s - loss: 2.5020 - acc: 0.5288 - f1_score: 0.5116 - val_loss: 2.5040 - val_acc: 0.3889 - val_f1_score: 0.3873
+Epoch 35/300
+24/24 - 1s - loss: 2.5019 - acc: 0.5330 - f1_score: 0.5100 - val_loss: 2.5041 - val_acc: 0.3611 - val_f1_score: 0.3610
+Epoch 36/300
+24/24 - 1s - loss: 2.5018 - acc: 0.5300 - f1_score: 0.4999 - val_loss: 2.5042 - val_acc: 0.3440 - val_f1_score: 0.3439
+Epoch 37/300
+24/24 - 1s - loss: 2.5017 - acc: 0.5333 - f1_score: 0.4975 - val_loss: 2.5043 - val_acc: 0.3397 - val_f1_score: 0.3394
+Epoch 38/300
+24/24 - 1s - loss: 2.5016 - acc: 0.5341 - f1_score: 0.4955 - val_loss: 2.5043 - val_acc: 0.3248 - val_f1_score: 0.3233
+Epoch 39/300
+24/24 - 1s - loss: 2.5015 - acc: 0.5343 - f1_score: 0.4900 - val_loss: 2.5044 - val_acc: 0.3098 - val_f1_score: 0.3064
+Epoch 40/300
+24/24 - 1s - loss: 2.5014 - acc: 0.5345 - f1_score: 0.4851 - val_loss: 2.5045 - val_acc: 0.3034 - val_f1_score: 0.2988
+Epoch 41/300
+24/24 - 1s - loss: 2.5013 - acc: 0.5328 - f1_score: 0.4770 - val_loss: 2.5045 - val_acc: 0.2949 - val_f1_score: 0.2891
+Epoch 42/300
+24/24 - 1s - loss: 2.5012 - acc: 0.5336 - f1_score: 0.4756 - val_loss: 2.5046 - val_acc: 0.2906 - val_f1_score: 0.2831
+Restoring model weights from the end of the best epoch.
+Epoch 00042: early stopping
+WARNING:tensorflow:5 out of the last 12 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f1939195d30> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+              precision    recall  f1-score   support
+
+           0       0.70      0.70      0.70       336
+           1       0.22      0.22      0.22       132
+
+    accuracy                           0.56       468
+   macro avg       0.46      0.46      0.46       468
+weighted avg       0.56      0.56      0.56       468
+
+2022-09-09 12:52:43.177803: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:52:43.177834: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:52:43.177910: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:52:43.177927: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1390
+Epoch 1/300
+2022-09-09 12:52:44.720243: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:52:44.720276: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:52:44.720357: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:52:44.819731: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:52:44.822160: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:52:44.834441: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:52:44.842381: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44
+2022-09-09 12:52:44.844779: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44/sasquatch.trace.json.gz
+2022-09-09 12:52:44.861301: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44
+2022-09-09 12:52:44.871038: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44/sasquatch.memory_profile.json.gz
+2022-09-09 12:52:44.885361: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125243/train/plugins/profile/2022_09_09_12_52_44/sasquatch.kernel_stats.pb
+
+24/24 - 3s - loss: 2.5054 - acc: 0.5011 - f1_score: 0.3338 - val_loss: 2.5040 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 2/300
+24/24 - 1s - loss: 2.5053 - acc: 0.5011 - f1_score: 0.3338 - val_loss: 2.5039 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 3/300
+24/24 - 1s - loss: 2.5052 - acc: 0.5011 - f1_score: 0.3338 - val_loss: 2.5039 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 4/300
+24/24 - 1s - loss: 2.5051 - acc: 0.5012 - f1_score: 0.3342 - val_loss: 2.5038 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 5/300
+24/24 - 1s - loss: 2.5050 - acc: 0.5012 - f1_score: 0.3342 - val_loss: 2.5037 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 6/300
+24/24 - 1s - loss: 2.5049 - acc: 0.5012 - f1_score: 0.3342 - val_loss: 2.5036 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 7/300
+24/24 - 1s - loss: 2.5048 - acc: 0.5014 - f1_score: 0.3345 - val_loss: 2.5036 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 8/300
+24/24 - 1s - loss: 2.5047 - acc: 0.5014 - f1_score: 0.3345 - val_loss: 2.5035 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 9/300
+24/24 - 1s - loss: 2.5046 - acc: 0.5014 - f1_score: 0.3345 - val_loss: 2.5034 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 10/300
+24/24 - 1s - loss: 2.5045 - acc: 0.5012 - f1_score: 0.3345 - val_loss: 2.5033 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 11/300
+24/24 - 1s - loss: 2.5044 - acc: 0.5014 - f1_score: 0.3351 - val_loss: 2.5032 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 12/300
+24/24 - 1s - loss: 2.5043 - acc: 0.5014 - f1_score: 0.3351 - val_loss: 2.5032 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 13/300
+24/24 - 1s - loss: 2.5042 - acc: 0.5016 - f1_score: 0.3358 - val_loss: 2.5031 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 14/300
+24/24 - 1s - loss: 2.5041 - acc: 0.5012 - f1_score: 0.3356 - val_loss: 2.5030 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 15/300
+24/24 - 1s - loss: 2.5040 - acc: 0.5011 - f1_score: 0.3359 - val_loss: 2.5029 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 16/300
+24/24 - 1s - loss: 2.5039 - acc: 0.5011 - f1_score: 0.3364 - val_loss: 2.5028 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 17/300
+24/24 - 1s - loss: 2.5038 - acc: 0.5012 - f1_score: 0.3368 - val_loss: 2.5028 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 18/300
+24/24 - 1s - loss: 2.5037 - acc: 0.5012 - f1_score: 0.3377 - val_loss: 2.5027 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 19/300
+24/24 - 1s - loss: 2.5036 - acc: 0.5007 - f1_score: 0.3377 - val_loss: 2.5026 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 20/300
+24/24 - 1s - loss: 2.5035 - acc: 0.5004 - f1_score: 0.3376 - val_loss: 2.5025 - val_acc: 0.5000 - val_f1_score: 0.3333
+Epoch 21/300
+24/24 - 1s - loss: 2.5034 - acc: 0.5006 - f1_score: 0.3382 - val_loss: 2.5024 - val_acc: 0.5000 - val_f1_score: 0.3333
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67       390
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.50       390
+   macro avg       0.50      0.25      0.33       390
+weighted avg       1.00      0.50      0.67       390
+
+2022-09-09 12:53:11.263313: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:53:11.263342: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:53:11.263407: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:53:11.263420: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1400
+Epoch 1/300
+2022-09-09 12:53:12.728966: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:53:12.728998: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:53:12.729052: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:53:12.824714: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:53:12.827113: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:53:12.839069: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:53:12.849951: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12
+2022-09-09 12:53:12.852323: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12/sasquatch.trace.json.gz
+2022-09-09 12:53:12.869031: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12
+2022-09-09 12:53:12.878291: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12/sasquatch.memory_profile.json.gz
+2022-09-09 12:53:12.898851: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125311/train/plugins/profile/2022_09_09_12_53_12/sasquatch.kernel_stats.pb
+
+24/24 - 2s - loss: 2.5045 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5188 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 2/300
+24/24 - 1s - loss: 2.5043 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5192 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 3/300
+24/24 - 1s - loss: 2.5042 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5195 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 4/300
+24/24 - 1s - loss: 2.5041 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5198 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 5/300
+24/24 - 1s - loss: 2.5040 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5202 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 6/300
+24/24 - 1s - loss: 2.5039 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5205 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 7/300
+24/24 - 1s - loss: 2.5038 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5208 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 8/300
+24/24 - 1s - loss: 2.5037 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5211 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 9/300
+24/24 - 1s - loss: 2.5036 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5214 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 10/300
+24/24 - 1s - loss: 2.5035 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5216 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 11/300
+24/24 - 1s - loss: 2.5034 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5219 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 12/300
+24/24 - 1s - loss: 2.5033 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5221 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 13/300
+24/24 - 1s - loss: 2.5032 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5224 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 14/300
+24/24 - 1s - loss: 2.5030 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5226 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 15/300
+24/24 - 1s - loss: 2.5029 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5227 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 16/300
+24/24 - 1s - loss: 2.5028 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5230 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 17/300
+24/24 - 1s - loss: 2.5027 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5232 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 18/300
+24/24 - 1s - loss: 2.5026 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5234 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 19/300
+24/24 - 1s - loss: 2.5025 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5236 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 20/300
+24/24 - 1s - loss: 2.5024 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5237 - val_acc: 0.1562 - val_f1_score: 0.1351
+Epoch 21/300
+24/24 - 1s - loss: 2.5023 - acc: 0.5247 - f1_score: 0.3441 - val_loss: 2.5239 - val_acc: 0.1562 - val_f1_score: 0.1351
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.16      0.27       416
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.16       416
+   macro avg       0.50      0.08      0.14       416
+weighted avg       1.00      0.16      0.27       416
+
+2022-09-09 12:53:38.847103: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:53:38.847138: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:53:38.847218: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:53:38.847238: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1419
+Epoch 1/300
+2022-09-09 12:53:40.361783: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:53:40.361818: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:53:40.361872: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:53:40.465663: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:53:40.468266: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:53:40.480720: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:53:40.492803: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40
+2022-09-09 12:53:40.495539: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40/sasquatch.trace.json.gz
+2022-09-09 12:53:40.513873: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40
+2022-09-09 12:53:40.523319: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40/sasquatch.memory_profile.json.gz
+2022-09-09 12:53:40.542119: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125338/train/plugins/profile/2022_09_09_12_53_40/sasquatch.kernel_stats.pb
+
+24/24 - 3s - loss: 2.5047 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 2/300
+24/24 - 1s - loss: 2.5046 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 3/300
+24/24 - 1s - loss: 2.5045 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 4/300
+24/24 - 1s - loss: 2.5044 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 5/300
+24/24 - 1s - loss: 2.5044 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 6/300
+24/24 - 1s - loss: 2.5043 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 7/300
+24/24 - 1s - loss: 2.5042 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 8/300
+24/24 - 1s - loss: 2.5041 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 9/300
+24/24 - 1s - loss: 2.5040 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 10/300
+24/24 - 1s - loss: 2.5039 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 11/300
+24/24 - 1s - loss: 2.5038 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 12/300
+24/24 - 1s - loss: 2.5037 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 13/300
+24/24 - 1s - loss: 2.5036 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 14/300
+24/24 - 1s - loss: 2.5035 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 15/300
+24/24 - 1s - loss: 2.5034 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5136 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 16/300
+24/24 - 1s - loss: 2.5033 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5135 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 17/300
+24/24 - 1s - loss: 2.5032 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5135 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 18/300
+24/24 - 1s - loss: 2.5031 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5135 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 19/300
+24/24 - 1s - loss: 2.5030 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5135 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 20/300
+24/24 - 1s - loss: 2.5029 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5134 - val_acc: 0.3143 - val_f1_score: 0.2391
+Epoch 21/300
+24/24 - 1s - loss: 2.5028 - acc: 0.5152 - f1_score: 0.3400 - val_loss: 2.5134 - val_acc: 0.3143 - val_f1_score: 0.2391
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.31      0.48       455
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.31       455
+   macro avg       0.50      0.16      0.24       455
+weighted avg       1.00      0.31      0.48       455
+
+2022-09-09 12:54:06.718444: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:54:06.718474: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:54:06.718550: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:54:06.718565: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1517
+Epoch 1/300
+2022-09-09 12:54:08.192193: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:54:08.192229: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:54:08.192291: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:54:08.289970: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:54:08.292369: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:54:08.304440: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:54:08.312959: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08
+2022-09-09 12:54:08.315319: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08/sasquatch.trace.json.gz
+2022-09-09 12:54:08.331155: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08
+2022-09-09 12:54:08.340335: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08/sasquatch.memory_profile.json.gz
+2022-09-09 12:54:08.355505: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125406/train/plugins/profile/2022_09_09_12_54_08/sasquatch.kernel_stats.pb
+
+25/25 - 2s - loss: 2.5062 - acc: 0.4789 - f1_score: 0.3238 - val_loss: 2.4879 - val_acc: 0.9565 - val_f1_score: 0.4889
+Epoch 2/300
+25/25 - 1s - loss: 2.5061 - acc: 0.4792 - f1_score: 0.3245 - val_loss: 2.4889 - val_acc: 0.9565 - val_f1_score: 0.4889
+Epoch 3/300
+25/25 - 1s - loss: 2.5059 - acc: 0.4792 - f1_score: 0.3245 - val_loss: 2.4901 - val_acc: 0.9532 - val_f1_score: 0.4880
+Epoch 4/300
+25/25 - 1s - loss: 2.5057 - acc: 0.4792 - f1_score: 0.3253 - val_loss: 2.4907 - val_acc: 0.9498 - val_f1_score: 0.4871
+Epoch 5/300
+25/25 - 1s - loss: 2.5056 - acc: 0.4794 - f1_score: 0.3262 - val_loss: 2.4913 - val_acc: 0.9498 - val_f1_score: 0.4871
+Epoch 6/300
+25/25 - 1s - loss: 2.5054 - acc: 0.4789 - f1_score: 0.3271 - val_loss: 2.4921 - val_acc: 0.9498 - val_f1_score: 0.4871
+Epoch 7/300
+25/25 - 1s - loss: 2.5053 - acc: 0.4783 - f1_score: 0.3276 - val_loss: 2.4928 - val_acc: 0.9465 - val_f1_score: 0.4863
+Epoch 8/300
+25/25 - 1s - loss: 2.5051 - acc: 0.4783 - f1_score: 0.3305 - val_loss: 2.4936 - val_acc: 0.9431 - val_f1_score: 0.4854
+Epoch 9/300
+25/25 - 1s - loss: 2.5050 - acc: 0.4784 - f1_score: 0.3326 - val_loss: 2.4942 - val_acc: 0.9398 - val_f1_score: 0.4845
+Epoch 10/300
+25/25 - 1s - loss: 2.5048 - acc: 0.4774 - f1_score: 0.3360 - val_loss: 2.4950 - val_acc: 0.9331 - val_f1_score: 0.4827
+Epoch 11/300
+25/25 - 1s - loss: 2.5047 - acc: 0.4773 - f1_score: 0.3433 - val_loss: 2.4958 - val_acc: 0.9130 - val_f1_score: 0.4773
+Epoch 12/300
+25/25 - 1s - loss: 2.5046 - acc: 0.4753 - f1_score: 0.3512 - val_loss: 2.4963 - val_acc: 0.8997 - val_f1_score: 0.4736
+Epoch 13/300
+25/25 - 1s - loss: 2.5044 - acc: 0.4758 - f1_score: 0.3625 - val_loss: 2.4971 - val_acc: 0.8729 - val_f1_score: 0.4661
+Epoch 14/300
+25/25 - 1s - loss: 2.5043 - acc: 0.4761 - f1_score: 0.3793 - val_loss: 2.4978 - val_acc: 0.8562 - val_f1_score: 0.4833
+Epoch 15/300
+25/25 - 1s - loss: 2.5041 - acc: 0.4760 - f1_score: 0.3913 - val_loss: 2.4985 - val_acc: 0.8194 - val_f1_score: 0.4680
+Epoch 16/300
+25/25 - 1s - loss: 2.5040 - acc: 0.4796 - f1_score: 0.4136 - val_loss: 2.4993 - val_acc: 0.7793 - val_f1_score: 0.4661
+Epoch 17/300
+25/25 - 1s - loss: 2.5039 - acc: 0.4836 - f1_score: 0.4406 - val_loss: 2.4997 - val_acc: 0.7625 - val_f1_score: 0.4588
+Epoch 18/300
+25/25 - 1s - loss: 2.5038 - acc: 0.4852 - f1_score: 0.4497 - val_loss: 2.5002 - val_acc: 0.7258 - val_f1_score: 0.4637
+Epoch 19/300
+25/25 - 1s - loss: 2.5036 - acc: 0.4883 - f1_score: 0.4656 - val_loss: 2.5009 - val_acc: 0.6890 - val_f1_score: 0.4628
+Epoch 20/300
+25/25 - 1s - loss: 2.5035 - acc: 0.4891 - f1_score: 0.4746 - val_loss: 2.5014 - val_acc: 0.6421 - val_f1_score: 0.4387
+Epoch 21/300
+25/25 - 1s - loss: 2.5034 - acc: 0.4930 - f1_score: 0.4857 - val_loss: 2.5018 - val_acc: 0.6087 - val_f1_score: 0.4218
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.96      0.98       299
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.96       299
+   macro avg       0.50      0.48      0.49       299
+weighted avg       1.00      0.96      0.98       299
+
+2022-09-09 12:54:34.708877: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:54:34.708913: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:54:34.708999: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:54:34.709020: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1544
+Epoch 1/300
+2022-09-09 12:54:36.268972: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:54:36.269006: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:54:36.269059: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:54:36.369033: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:54:36.371621: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:54:36.389451: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:54:36.403392: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36
+2022-09-09 12:54:36.406689: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36/sasquatch.trace.json.gz
+2022-09-09 12:54:36.425222: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36
+2022-09-09 12:54:36.431382: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36/sasquatch.memory_profile.json.gz
+2022-09-09 12:54:36.450127: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125434/train/plugins/profile/2022_09_09_12_54_36/sasquatch.kernel_stats.pb
+
+25/25 - 2s - loss: 2.5053 - acc: 0.5020 - f1_score: 0.3342 - val_loss: 2.5061 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 2/300
+25/25 - 1s - loss: 2.5052 - acc: 0.5020 - f1_score: 0.3342 - val_loss: 2.5059 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 3/300
+25/25 - 1s - loss: 2.5051 - acc: 0.5020 - f1_score: 0.3342 - val_loss: 2.5058 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 4/300
+25/25 - 1s - loss: 2.5050 - acc: 0.5022 - f1_score: 0.3346 - val_loss: 2.5057 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 5/300
+25/25 - 1s - loss: 2.5049 - acc: 0.5022 - f1_score: 0.3346 - val_loss: 2.5055 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 6/300
+25/25 - 1s - loss: 2.5048 - acc: 0.5022 - f1_score: 0.3346 - val_loss: 2.5054 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 7/300
+25/25 - 1s - loss: 2.5047 - acc: 0.5022 - f1_score: 0.3346 - val_loss: 2.5052 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 8/300
+25/25 - 1s - loss: 2.5046 - acc: 0.5024 - f1_score: 0.3349 - val_loss: 2.5051 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 9/300
+25/25 - 1s - loss: 2.5045 - acc: 0.5024 - f1_score: 0.3349 - val_loss: 2.5050 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 10/300
+25/25 - 1s - loss: 2.5044 - acc: 0.5024 - f1_score: 0.3349 - val_loss: 2.5048 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 11/300
+25/25 - 1s - loss: 2.5043 - acc: 0.5020 - f1_score: 0.3348 - val_loss: 2.5047 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 12/300
+25/25 - 1s - loss: 2.5042 - acc: 0.5022 - f1_score: 0.3351 - val_loss: 2.5046 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 13/300
+25/25 - 1s - loss: 2.5041 - acc: 0.5024 - f1_score: 0.3358 - val_loss: 2.5045 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 14/300
+25/25 - 1s - loss: 2.5040 - acc: 0.5024 - f1_score: 0.3361 - val_loss: 2.5043 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 15/300
+25/25 - 1s - loss: 2.5039 - acc: 0.5022 - f1_score: 0.3360 - val_loss: 2.5042 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 16/300
+25/25 - 1s - loss: 2.5038 - acc: 0.5017 - f1_score: 0.3361 - val_loss: 2.5041 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 17/300
+25/25 - 1s - loss: 2.5037 - acc: 0.5019 - f1_score: 0.3364 - val_loss: 2.5040 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 18/300
+25/25 - 1s - loss: 2.5036 - acc: 0.5016 - f1_score: 0.3363 - val_loss: 2.5039 - val_acc: 0.4286 - val_f1_score: 0.3000
+Epoch 19/300
+25/25 - 1s - loss: 2.5035 - acc: 0.5014 - f1_score: 0.3362 - val_loss: 2.5037 - val_acc: 0.4396 - val_f1_score: 0.3212
+Epoch 20/300
+25/25 - 1s - loss: 2.5034 - acc: 0.5011 - f1_score: 0.3366 - val_loss: 2.5036 - val_acc: 0.4396 - val_f1_score: 0.3212
+Epoch 21/300
+25/25 - 1s - loss: 2.5033 - acc: 0.5009 - f1_score: 0.3363 - val_loss: 2.5035 - val_acc: 0.4396 - val_f1_score: 0.3212
+Epoch 22/300
+25/25 - 1s - loss: 2.5032 - acc: 0.5013 - f1_score: 0.3375 - val_loss: 2.5034 - val_acc: 0.4396 - val_f1_score: 0.3212
+Epoch 23/300
+25/25 - 1s - loss: 2.5031 - acc: 0.5005 - f1_score: 0.3371 - val_loss: 2.5033 - val_acc: 0.4396 - val_f1_score: 0.3212
+Epoch 24/300
+25/25 - 1s - loss: 2.5030 - acc: 0.5006 - f1_score: 0.3375 - val_loss: 2.5032 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 25/300
+25/25 - 1s - loss: 2.5029 - acc: 0.5006 - f1_score: 0.3378 - val_loss: 2.5031 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 26/300
+25/25 - 1s - loss: 2.5028 - acc: 0.5003 - f1_score: 0.3373 - val_loss: 2.5029 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 27/300
+25/25 - 1s - loss: 2.5027 - acc: 0.4998 - f1_score: 0.3374 - val_loss: 2.5028 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 28/300
+25/25 - 1s - loss: 2.5026 - acc: 0.5005 - f1_score: 0.3388 - val_loss: 2.5027 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 29/300
+25/25 - 1s - loss: 2.5025 - acc: 0.5003 - f1_score: 0.3387 - val_loss: 2.5026 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 30/300
+25/25 - 1s - loss: 2.5024 - acc: 0.5002 - f1_score: 0.3394 - val_loss: 2.5025 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 31/300
+25/25 - 1s - loss: 2.5023 - acc: 0.5003 - f1_score: 0.3409 - val_loss: 2.5024 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 32/300
+25/25 - 1s - loss: 2.5022 - acc: 0.5008 - f1_score: 0.3419 - val_loss: 2.5023 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 33/300
+25/25 - 1s - loss: 2.5021 - acc: 0.5005 - f1_score: 0.3420 - val_loss: 2.5022 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 34/300
+25/25 - 1s - loss: 2.5020 - acc: 0.5003 - f1_score: 0.3419 - val_loss: 2.5021 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 35/300
+25/25 - 1s - loss: 2.5019 - acc: 0.5000 - f1_score: 0.3418 - val_loss: 2.5020 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 36/300
+25/25 - 1s - loss: 2.5018 - acc: 0.5002 - f1_score: 0.3427 - val_loss: 2.5018 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 37/300
+25/25 - 1s - loss: 2.5017 - acc: 0.5002 - f1_score: 0.3435 - val_loss: 2.5017 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 38/300
+25/25 - 1s - loss: 2.5016 - acc: 0.5003 - f1_score: 0.3441 - val_loss: 2.5016 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 39/300
+25/25 - 1s - loss: 2.5015 - acc: 0.5003 - f1_score: 0.3477 - val_loss: 2.5015 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 40/300
+25/25 - 1s - loss: 2.5014 - acc: 0.5009 - f1_score: 0.3488 - val_loss: 2.5014 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 41/300
+25/25 - 1s - loss: 2.5013 - acc: 0.5008 - f1_score: 0.3492 - val_loss: 2.5013 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 42/300
+25/25 - 1s - loss: 2.5012 - acc: 0.5003 - f1_score: 0.3493 - val_loss: 2.5012 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 43/300
+25/25 - 1s - loss: 2.5011 - acc: 0.5000 - f1_score: 0.3496 - val_loss: 2.5011 - val_acc: 0.4505 - val_f1_score: 0.3417
+Epoch 44/300
+25/25 - 1s - loss: 2.5010 - acc: 0.5003 - f1_score: 0.3503 - val_loss: 2.5010 - val_acc: 0.4505 - val_f1_score: 0.3417
+Restoring model weights from the end of the best epoch.
+Epoch 00044: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.44      0.61        89
+           1       0.04      1.00      0.07         2
+
+    accuracy                           0.45        91
+   macro avg       0.52      0.72      0.34        91
+weighted avg       0.98      0.45      0.60        91
+
+2022-09-09 12:55:29.294641: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:55:29.294668: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:55:29.294743: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:55:29.294762: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1624
+Epoch 1/300
+2022-09-09 12:55:30.724354: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:55:30.724390: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:55:30.724446: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:55:30.829304: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:55:30.831829: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:55:30.844568: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:55:30.852516: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30
+2022-09-09 12:55:30.854827: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30/sasquatch.trace.json.gz
+2022-09-09 12:55:30.872535: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30
+2022-09-09 12:55:30.878491: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30/sasquatch.memory_profile.json.gz
+2022-09-09 12:55:30.895760: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125529/train/plugins/profile/2022_09_09_12_55_30/sasquatch.kernel_stats.pb
+
+24/24 - 3s - loss: 2.5057 - acc: 0.4915 - f1_score: 0.3295 - val_loss: 2.4993 - val_acc: 0.6667 - val_f1_score: 0.4000
+Epoch 2/300
+24/24 - 1s - loss: 2.5056 - acc: 0.4915 - f1_score: 0.3295 - val_loss: 2.4994 - val_acc: 0.6667 - val_f1_score: 0.4000
+Epoch 3/300
+24/24 - 1s - loss: 2.5055 - acc: 0.4917 - f1_score: 0.3299 - val_loss: 2.4996 - val_acc: 0.6667 - val_f1_score: 0.4000
+Epoch 4/300
+24/24 - 1s - loss: 2.5053 - acc: 0.4918 - f1_score: 0.3302 - val_loss: 2.4997 - val_acc: 0.6667 - val_f1_score: 0.4000
+Epoch 5/300
+24/24 - 1s - loss: 2.5052 - acc: 0.4918 - f1_score: 0.3308 - val_loss: 2.4998 - val_acc: 0.6667 - val_f1_score: 0.4000
+Epoch 6/300
+24/24 - 1s - loss: 2.5051 - acc: 0.4918 - f1_score: 0.3311 - val_loss: 2.4999 - val_acc: 0.6667 - val_f1_score: 0.4000
+Epoch 7/300
+24/24 - 1s - loss: 2.5050 - acc: 0.4913 - f1_score: 0.3314 - val_loss: 2.5000 - val_acc: 0.6695 - val_f1_score: 0.4092
+Epoch 8/300
+24/24 - 1s - loss: 2.5049 - acc: 0.4905 - f1_score: 0.3316 - val_loss: 2.5002 - val_acc: 0.6695 - val_f1_score: 0.4092
+Epoch 9/300
+24/24 - 1s - loss: 2.5048 - acc: 0.4905 - f1_score: 0.3330 - val_loss: 2.5002 - val_acc: 0.6695 - val_f1_score: 0.4092
+Epoch 10/300
+24/24 - 1s - loss: 2.5047 - acc: 0.4902 - f1_score: 0.3340 - val_loss: 2.5003 - val_acc: 0.6695 - val_f1_score: 0.4092
+Epoch 11/300
+24/24 - 1s - loss: 2.5045 - acc: 0.4900 - f1_score: 0.3347 - val_loss: 2.5004 - val_acc: 0.6695 - val_f1_score: 0.4092
+Epoch 12/300
+24/24 - 1s - loss: 2.5044 - acc: 0.4902 - f1_score: 0.3375 - val_loss: 2.5005 - val_acc: 0.6667 - val_f1_score: 0.4081
+Epoch 13/300
+24/24 - 1s - loss: 2.5043 - acc: 0.4892 - f1_score: 0.3381 - val_loss: 2.5006 - val_acc: 0.6638 - val_f1_score: 0.4070
+Epoch 14/300
+24/24 - 1s - loss: 2.5042 - acc: 0.4905 - f1_score: 0.3446 - val_loss: 2.5007 - val_acc: 0.6667 - val_f1_score: 0.4158
+Epoch 15/300
+24/24 - 1s - loss: 2.5041 - acc: 0.4890 - f1_score: 0.3464 - val_loss: 2.5008 - val_acc: 0.6610 - val_f1_score: 0.4135
+Epoch 16/300
+24/24 - 1s - loss: 2.5040 - acc: 0.4884 - f1_score: 0.3501 - val_loss: 2.5008 - val_acc: 0.6524 - val_f1_score: 0.4172
+Epoch 17/300
+24/24 - 1s - loss: 2.5039 - acc: 0.4879 - f1_score: 0.3562 - val_loss: 2.5009 - val_acc: 0.6467 - val_f1_score: 0.4147
+Epoch 18/300
+24/24 - 1s - loss: 2.5038 - acc: 0.4882 - f1_score: 0.3621 - val_loss: 2.5009 - val_acc: 0.6382 - val_f1_score: 0.4176
+Epoch 19/300
+24/24 - 1s - loss: 2.5037 - acc: 0.4879 - f1_score: 0.3696 - val_loss: 2.5010 - val_acc: 0.6382 - val_f1_score: 0.4304
+Epoch 20/300
+24/24 - 1s - loss: 2.5036 - acc: 0.4871 - f1_score: 0.3715 - val_loss: 2.5010 - val_acc: 0.6325 - val_f1_score: 0.4336
+Epoch 21/300
+24/24 - 1s - loss: 2.5035 - acc: 0.4861 - f1_score: 0.3818 - val_loss: 2.5011 - val_acc: 0.6211 - val_f1_score: 0.4278
+Epoch 22/300
+24/24 - 1s - loss: 2.5034 - acc: 0.4876 - f1_score: 0.3904 - val_loss: 2.5011 - val_acc: 0.6182 - val_f1_score: 0.4374
+Epoch 23/300
+24/24 - 1s - loss: 2.5033 - acc: 0.4882 - f1_score: 0.4009 - val_loss: 2.5012 - val_acc: 0.6068 - val_f1_score: 0.4414
+Epoch 24/300
+24/24 - 1s - loss: 2.5032 - acc: 0.4902 - f1_score: 0.4118 - val_loss: 2.5012 - val_acc: 0.6040 - val_f1_score: 0.4447
+Epoch 25/300
+24/24 - 1s - loss: 2.5031 - acc: 0.4903 - f1_score: 0.4177 - val_loss: 2.5012 - val_acc: 0.5983 - val_f1_score: 0.4461
+Epoch 26/300
+24/24 - 1s - loss: 2.5030 - acc: 0.4913 - f1_score: 0.4242 - val_loss: 2.5013 - val_acc: 0.5926 - val_f1_score: 0.4558
+Epoch 27/300
+24/24 - 1s - loss: 2.5029 - acc: 0.4926 - f1_score: 0.4331 - val_loss: 2.5013 - val_acc: 0.5869 - val_f1_score: 0.4563
+Epoch 28/300
+24/24 - 1s - loss: 2.5028 - acc: 0.4948 - f1_score: 0.4449 - val_loss: 2.5013 - val_acc: 0.5698 - val_f1_score: 0.4497
+Epoch 29/300
+24/24 - 1s - loss: 2.5027 - acc: 0.4985 - f1_score: 0.4557 - val_loss: 2.5013 - val_acc: 0.5613 - val_f1_score: 0.4515
+Epoch 30/300
+24/24 - 1s - loss: 2.5026 - acc: 0.4980 - f1_score: 0.4630 - val_loss: 2.5013 - val_acc: 0.5613 - val_f1_score: 0.4583
+Epoch 31/300
+24/24 - 1s - loss: 2.5025 - acc: 0.4982 - f1_score: 0.4668 - val_loss: 2.5014 - val_acc: 0.5584 - val_f1_score: 0.4629
+Epoch 32/300
+24/24 - 1s - loss: 2.5024 - acc: 0.5005 - f1_score: 0.4742 - val_loss: 2.5014 - val_acc: 0.5698 - val_f1_score: 0.4856
+Epoch 33/300
+24/24 - 1s - loss: 2.5023 - acc: 0.4997 - f1_score: 0.4757 - val_loss: 2.5014 - val_acc: 0.5698 - val_f1_score: 0.4938
+Epoch 34/300
+24/24 - 1s - loss: 2.5022 - acc: 0.5015 - f1_score: 0.4832 - val_loss: 2.5014 - val_acc: 0.5783 - val_f1_score: 0.5171
+Epoch 35/300
+24/24 - 1s - loss: 2.5021 - acc: 0.5020 - f1_score: 0.4870 - val_loss: 2.5014 - val_acc: 0.5755 - val_f1_score: 0.5172
+Epoch 36/300
+24/24 - 1s - loss: 2.5020 - acc: 0.5057 - f1_score: 0.4949 - val_loss: 2.5014 - val_acc: 0.5641 - val_f1_score: 0.5107
+Epoch 37/300
+24/24 - 1s - loss: 2.5019 - acc: 0.5093 - f1_score: 0.5014 - val_loss: 2.5014 - val_acc: 0.5470 - val_f1_score: 0.5015
+Epoch 38/300
+24/24 - 1s - loss: 2.5018 - acc: 0.5097 - f1_score: 0.5034 - val_loss: 2.5014 - val_acc: 0.5527 - val_f1_score: 0.5114
+Epoch 39/300
+24/24 - 1s - loss: 2.5017 - acc: 0.5124 - f1_score: 0.5085 - val_loss: 2.5014 - val_acc: 0.5413 - val_f1_score: 0.5042
+Epoch 40/300
+24/24 - 1s - loss: 2.5016 - acc: 0.5136 - f1_score: 0.5110 - val_loss: 2.5014 - val_acc: 0.5328 - val_f1_score: 0.4991
+Epoch 41/300
+24/24 - 1s - loss: 2.5015 - acc: 0.5146 - f1_score: 0.5128 - val_loss: 2.5014 - val_acc: 0.5157 - val_f1_score: 0.4855
+Epoch 42/300
+24/24 - 1s - loss: 2.5014 - acc: 0.5144 - f1_score: 0.5137 - val_loss: 2.5014 - val_acc: 0.5271 - val_f1_score: 0.5057
+Epoch 43/300
+24/24 - 1s - loss: 2.5013 - acc: 0.5177 - f1_score: 0.5176 - val_loss: 2.5014 - val_acc: 0.5185 - val_f1_score: 0.4986
+Epoch 44/300
+24/24 - 1s - loss: 2.5012 - acc: 0.5178 - f1_score: 0.5178 - val_loss: 2.5014 - val_acc: 0.5157 - val_f1_score: 0.4974
+Epoch 45/300
+24/24 - 1s - loss: 2.5011 - acc: 0.5198 - f1_score: 0.5198 - val_loss: 2.5014 - val_acc: 0.5157 - val_f1_score: 0.5006
+Epoch 46/300
+24/24 - 1s - loss: 2.5010 - acc: 0.5223 - f1_score: 0.5217 - val_loss: 2.5014 - val_acc: 0.5128 - val_f1_score: 0.5010
+Epoch 47/300
+24/24 - 1s - loss: 2.5009 - acc: 0.5223 - f1_score: 0.5210 - val_loss: 2.5013 - val_acc: 0.4872 - val_f1_score: 0.4786
+Epoch 48/300
+24/24 - 1s - loss: 2.5008 - acc: 0.5226 - f1_score: 0.5213 - val_loss: 2.5013 - val_acc: 0.4843 - val_f1_score: 0.4775
+Epoch 49/300
+24/24 - 1s - loss: 2.5007 - acc: 0.5237 - f1_score: 0.5212 - val_loss: 2.5013 - val_acc: 0.4872 - val_f1_score: 0.4820
+Epoch 50/300
+24/24 - 1s - loss: 2.5006 - acc: 0.5265 - f1_score: 0.5232 - val_loss: 2.5013 - val_acc: 0.4900 - val_f1_score: 0.4858
+Epoch 51/300
+24/24 - 1s - loss: 2.5005 - acc: 0.5272 - f1_score: 0.5223 - val_loss: 2.5012 - val_acc: 0.4872 - val_f1_score: 0.4841
+Epoch 52/300
+24/24 - 1s - loss: 2.5004 - acc: 0.5280 - f1_score: 0.5225 - val_loss: 2.5012 - val_acc: 0.4872 - val_f1_score: 0.4850
+Epoch 53/300
+24/24 - 1s - loss: 2.5003 - acc: 0.5296 - f1_score: 0.5219 - val_loss: 2.5012 - val_acc: 0.4758 - val_f1_score: 0.4742
+Epoch 54/300
+24/24 - 1s - loss: 2.5002 - acc: 0.5303 - f1_score: 0.5221 - val_loss: 2.5012 - val_acc: 0.4729 - val_f1_score: 0.4718
+Epoch 55/300
+24/24 - 1s - loss: 2.5001 - acc: 0.5300 - f1_score: 0.5197 - val_loss: 2.5011 - val_acc: 0.4672 - val_f1_score: 0.4666
+Restoring model weights from the end of the best epoch.
+Epoch 00055: early stopping
+WARNING:tensorflow:5 out of the last 13 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f1954430b80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+              precision    recall  f1-score   support
+
+           0       0.69      0.68      0.68       239
+           1       0.34      0.36      0.35       112
+
+    accuracy                           0.58       351
+   macro avg       0.52      0.52      0.52       351
+weighted avg       0.58      0.58      0.58       351
+
+2022-09-09 12:56:35.367962: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:56:35.367990: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:56:35.368053: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:56:35.368067: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1674
+Epoch 1/300
+2022-09-09 12:56:36.980583: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:56:36.980618: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:56:36.980676: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:56:37.086670: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:56:37.089310: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:56:37.106087: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:56:37.114263: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37
+2022-09-09 12:56:37.120493: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37/sasquatch.trace.json.gz
+2022-09-09 12:56:37.139503: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37
+2022-09-09 12:56:37.145340: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37/sasquatch.memory_profile.json.gz
+2022-09-09 12:56:37.161385: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125635/train/plugins/profile/2022_09_09_12_56_37/sasquatch.kernel_stats.pb
+
+25/25 - 2s - loss: 2.5043 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5275 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 2/300
+25/25 - 1s - loss: 2.5042 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5281 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 3/300
+25/25 - 1s - loss: 2.5041 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5284 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 4/300
+25/25 - 1s - loss: 2.5040 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5293 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 5/300
+25/25 - 1s - loss: 2.5038 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5297 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 6/300
+25/25 - 1s - loss: 2.5037 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5299 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 7/300
+25/25 - 1s - loss: 2.5036 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5305 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 8/300
+25/25 - 1s - loss: 2.5035 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5307 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 9/300
+25/25 - 1s - loss: 2.5034 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5313 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 10/300
+25/25 - 1s - loss: 2.5033 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5315 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 11/300
+25/25 - 1s - loss: 2.5032 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5318 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 12/300
+25/25 - 1s - loss: 2.5031 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5322 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 13/300
+25/25 - 1s - loss: 2.5029 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5325 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 14/300
+25/25 - 1s - loss: 2.5028 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5330 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 15/300
+25/25 - 1s - loss: 2.5027 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5333 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 16/300
+25/25 - 1s - loss: 2.5026 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5337 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 17/300
+25/25 - 1s - loss: 2.5025 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5343 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 18/300
+25/25 - 1s - loss: 2.5024 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5347 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 19/300
+25/25 - 1s - loss: 2.5023 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5350 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 20/300
+25/25 - 1s - loss: 2.5022 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5353 - val_acc: 0.0435 - val_f1_score: 0.0417
+Epoch 21/300
+25/25 - 1s - loss: 2.5021 - acc: 0.5232 - f1_score: 0.3435 - val_loss: 2.5359 - val_acc: 0.0435 - val_f1_score: 0.0417
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+WARNING:tensorflow:5 out of the last 12 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f194ce4eaf0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+              precision    recall  f1-score   support
+
+           0       1.00      0.04      0.08       299
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.04       299
+   macro avg       0.50      0.02      0.04       299
+weighted avg       1.00      0.04      0.08       299
+
+2022-09-09 12:57:03.407326: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:57:03.407356: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:57:03.407442: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:57:03.407460: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1688
+Epoch 1/300
+2022-09-09 12:57:04.867001: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:57:04.867036: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:57:04.867088: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:57:04.968302: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:57:04.970699: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:57:04.983789: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:57:04.993873: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04
+2022-09-09 12:57:04.996806: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04/sasquatch.trace.json.gz
+2022-09-09 12:57:05.015650: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04
+2022-09-09 12:57:05.022163: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04/sasquatch.memory_profile.json.gz
+2022-09-09 12:57:05.035063: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125703/train/plugins/profile/2022_09_09_12_57_04/sasquatch.kernel_stats.pb
+
+24/24 - 2s - loss: 2.5056 - acc: 0.4957 - f1_score: 0.3314 - val_loss: 2.5020 - val_acc: 0.5926 - val_f1_score: 0.3721
+Epoch 2/300
+24/24 - 1s - loss: 2.5054 - acc: 0.4957 - f1_score: 0.3314 - val_loss: 2.5020 - val_acc: 0.5926 - val_f1_score: 0.3721
+Epoch 3/300
+24/24 - 1s - loss: 2.5053 - acc: 0.4959 - f1_score: 0.3318 - val_loss: 2.5021 - val_acc: 0.5926 - val_f1_score: 0.3721
+Epoch 4/300
+24/24 - 1s - loss: 2.5052 - acc: 0.4961 - f1_score: 0.3322 - val_loss: 2.5021 - val_acc: 0.5926 - val_f1_score: 0.3721
+Epoch 5/300
+24/24 - 1s - loss: 2.5051 - acc: 0.4961 - f1_score: 0.3322 - val_loss: 2.5021 - val_acc: 0.5926 - val_f1_score: 0.3721
+Epoch 6/300
+24/24 - 1s - loss: 2.5050 - acc: 0.4957 - f1_score: 0.3320 - val_loss: 2.5021 - val_acc: 0.5926 - val_f1_score: 0.3721
+Epoch 7/300
+24/24 - 1s - loss: 2.5049 - acc: 0.4961 - f1_score: 0.3330 - val_loss: 2.5021 - val_acc: 0.5926 - val_f1_score: 0.3721
+Epoch 8/300
+24/24 - 1s - loss: 2.5048 - acc: 0.4961 - f1_score: 0.3333 - val_loss: 2.5021 - val_acc: 0.5897 - val_f1_score: 0.3710
+Epoch 9/300
+24/24 - 1s - loss: 2.5047 - acc: 0.4956 - f1_score: 0.3334 - val_loss: 2.5021 - val_acc: 0.5897 - val_f1_score: 0.3710
+Epoch 10/300
+24/24 - 1s - loss: 2.5046 - acc: 0.4957 - f1_score: 0.3346 - val_loss: 2.5021 - val_acc: 0.5869 - val_f1_score: 0.3698
+Epoch 11/300
+24/24 - 1s - loss: 2.5045 - acc: 0.4959 - f1_score: 0.3352 - val_loss: 2.5021 - val_acc: 0.5840 - val_f1_score: 0.3687
+Epoch 12/300
+24/24 - 1s - loss: 2.5043 - acc: 0.4953 - f1_score: 0.3355 - val_loss: 2.5020 - val_acc: 0.5869 - val_f1_score: 0.3762
+Epoch 13/300
+24/24 - 1s - loss: 2.5042 - acc: 0.4948 - f1_score: 0.3355 - val_loss: 2.5020 - val_acc: 0.5840 - val_f1_score: 0.3750
+Epoch 14/300
+24/24 - 1s - loss: 2.5041 - acc: 0.4951 - f1_score: 0.3374 - val_loss: 2.5020 - val_acc: 0.5840 - val_f1_score: 0.3750
+Epoch 15/300
+24/24 - 1s - loss: 2.5040 - acc: 0.4953 - f1_score: 0.3394 - val_loss: 2.5020 - val_acc: 0.5840 - val_f1_score: 0.3811
+Epoch 16/300
+24/24 - 1s - loss: 2.5039 - acc: 0.4949 - f1_score: 0.3398 - val_loss: 2.5020 - val_acc: 0.5812 - val_f1_score: 0.3799
+Epoch 17/300
+24/24 - 1s - loss: 2.5038 - acc: 0.4941 - f1_score: 0.3399 - val_loss: 2.5020 - val_acc: 0.5812 - val_f1_score: 0.3799
+Epoch 18/300
+24/24 - 1s - loss: 2.5037 - acc: 0.4941 - f1_score: 0.3424 - val_loss: 2.5019 - val_acc: 0.5869 - val_f1_score: 0.3941
+Epoch 19/300
+24/24 - 1s - loss: 2.5036 - acc: 0.4946 - f1_score: 0.3469 - val_loss: 2.5019 - val_acc: 0.5869 - val_f1_score: 0.3941
+Epoch 20/300
+24/24 - 1s - loss: 2.5035 - acc: 0.4938 - f1_score: 0.3470 - val_loss: 2.5019 - val_acc: 0.5869 - val_f1_score: 0.3941
+Epoch 21/300
+24/24 - 1s - loss: 2.5034 - acc: 0.4930 - f1_score: 0.3497 - val_loss: 2.5018 - val_acc: 0.5812 - val_f1_score: 0.3914
+Epoch 22/300
+24/24 - 1s - loss: 2.5033 - acc: 0.4921 - f1_score: 0.3531 - val_loss: 2.5018 - val_acc: 0.5840 - val_f1_score: 0.4038
+Epoch 23/300
+24/24 - 1s - loss: 2.5032 - acc: 0.4921 - f1_score: 0.3580 - val_loss: 2.5018 - val_acc: 0.5812 - val_f1_score: 0.4076
+Epoch 24/300
+24/24 - 1s - loss: 2.5031 - acc: 0.4926 - f1_score: 0.3621 - val_loss: 2.5017 - val_acc: 0.5726 - val_f1_score: 0.4033
+Epoch 25/300
+24/24 - 1s - loss: 2.5030 - acc: 0.4917 - f1_score: 0.3623 - val_loss: 2.5017 - val_acc: 0.5698 - val_f1_score: 0.4018
+Epoch 26/300
+24/24 - 1s - loss: 2.5029 - acc: 0.4913 - f1_score: 0.3649 - val_loss: 2.5017 - val_acc: 0.5755 - val_f1_score: 0.4146
+Epoch 27/300
+24/24 - 1s - loss: 2.5028 - acc: 0.4915 - f1_score: 0.3705 - val_loss: 2.5016 - val_acc: 0.5755 - val_f1_score: 0.4146
+Epoch 28/300
+24/24 - 1s - loss: 2.5027 - acc: 0.4913 - f1_score: 0.3759 - val_loss: 2.5016 - val_acc: 0.5755 - val_f1_score: 0.4194
+Epoch 29/300
+24/24 - 1s - loss: 2.5026 - acc: 0.4920 - f1_score: 0.3790 - val_loss: 2.5016 - val_acc: 0.5726 - val_f1_score: 0.4269
+Epoch 30/300
+24/24 - 1s - loss: 2.5025 - acc: 0.4900 - f1_score: 0.3843 - val_loss: 2.5015 - val_acc: 0.5613 - val_f1_score: 0.4288
+Epoch 31/300
+24/24 - 1s - loss: 2.5024 - acc: 0.4900 - f1_score: 0.3856 - val_loss: 2.5015 - val_acc: 0.5499 - val_f1_score: 0.4222
+Epoch 32/300
+24/24 - 1s - loss: 2.5023 - acc: 0.4917 - f1_score: 0.3933 - val_loss: 2.5014 - val_acc: 0.5527 - val_f1_score: 0.4316
+Epoch 33/300
+24/24 - 1s - loss: 2.5022 - acc: 0.4913 - f1_score: 0.3959 - val_loss: 2.5014 - val_acc: 0.5670 - val_f1_score: 0.4654
+Epoch 34/300
+24/24 - 1s - loss: 2.5021 - acc: 0.4923 - f1_score: 0.4038 - val_loss: 2.5013 - val_acc: 0.5641 - val_f1_score: 0.4698
+Epoch 35/300
+24/24 - 1s - loss: 2.5020 - acc: 0.4913 - f1_score: 0.4065 - val_loss: 2.5013 - val_acc: 0.5641 - val_f1_score: 0.4729
+Epoch 36/300
+24/24 - 1s - loss: 2.5020 - acc: 0.4943 - f1_score: 0.4167 - val_loss: 2.5012 - val_acc: 0.5527 - val_f1_score: 0.4652
+Epoch 37/300
+24/24 - 1s - loss: 2.5019 - acc: 0.4966 - f1_score: 0.4231 - val_loss: 2.5012 - val_acc: 0.5499 - val_f1_score: 0.4661
+Epoch 38/300
+24/24 - 1s - loss: 2.5018 - acc: 0.4980 - f1_score: 0.4294 - val_loss: 2.5011 - val_acc: 0.5499 - val_f1_score: 0.4690
+Epoch 39/300
+24/24 - 1s - loss: 2.5017 - acc: 0.4974 - f1_score: 0.4330 - val_loss: 2.5011 - val_acc: 0.5385 - val_f1_score: 0.4638
+Epoch 40/300
+24/24 - 1s - loss: 2.5016 - acc: 0.4993 - f1_score: 0.4380 - val_loss: 2.5010 - val_acc: 0.5242 - val_f1_score: 0.4538
+Epoch 41/300
+24/24 - 1s - loss: 2.5015 - acc: 0.4993 - f1_score: 0.4405 - val_loss: 2.5010 - val_acc: 0.5214 - val_f1_score: 0.4568
+Epoch 42/300
+24/24 - 1s - loss: 2.5014 - acc: 0.5015 - f1_score: 0.4493 - val_loss: 2.5009 - val_acc: 0.5271 - val_f1_score: 0.4679
+Epoch 43/300
+24/24 - 1s - loss: 2.5013 - acc: 0.5015 - f1_score: 0.4530 - val_loss: 2.5009 - val_acc: 0.5356 - val_f1_score: 0.4830
+Epoch 44/300
+24/24 - 1s - loss: 2.5012 - acc: 0.5010 - f1_score: 0.4506 - val_loss: 2.5008 - val_acc: 0.5328 - val_f1_score: 0.4829
+Epoch 45/300
+24/24 - 1s - loss: 2.5011 - acc: 0.5029 - f1_score: 0.4557 - val_loss: 2.5008 - val_acc: 0.5299 - val_f1_score: 0.4847
+Epoch 46/300
+24/24 - 1s - loss: 2.5010 - acc: 0.5085 - f1_score: 0.4697 - val_loss: 2.5007 - val_acc: 0.5328 - val_f1_score: 0.4906
+Epoch 47/300
+24/24 - 1s - loss: 2.5009 - acc: 0.5074 - f1_score: 0.4708 - val_loss: 2.5007 - val_acc: 0.5356 - val_f1_score: 0.4964
+Epoch 48/300
+24/24 - 1s - loss: 2.5008 - acc: 0.5080 - f1_score: 0.4715 - val_loss: 2.5006 - val_acc: 0.5442 - val_f1_score: 0.5097
+Epoch 49/300
+24/24 - 1s - loss: 2.5007 - acc: 0.5090 - f1_score: 0.4764 - val_loss: 2.5005 - val_acc: 0.5442 - val_f1_score: 0.5097
+Epoch 50/300
+24/24 - 1s - loss: 2.5006 - acc: 0.5090 - f1_score: 0.4760 - val_loss: 2.5005 - val_acc: 0.5470 - val_f1_score: 0.5181
+Epoch 51/300
+24/24 - 1s - loss: 2.5005 - acc: 0.5103 - f1_score: 0.4813 - val_loss: 2.5004 - val_acc: 0.5442 - val_f1_score: 0.5172
+Epoch 52/300
+24/24 - 1s - loss: 2.5004 - acc: 0.5108 - f1_score: 0.4827 - val_loss: 2.5004 - val_acc: 0.5527 - val_f1_score: 0.5295
+Epoch 53/300
+24/24 - 1s - loss: 2.5003 - acc: 0.5105 - f1_score: 0.4872 - val_loss: 2.5003 - val_acc: 0.5556 - val_f1_score: 0.5343
+Epoch 54/300
+24/24 - 1s - loss: 2.5002 - acc: 0.5136 - f1_score: 0.4900 - val_loss: 2.5002 - val_acc: 0.5527 - val_f1_score: 0.5319
+Epoch 55/300
+24/24 - 1s - loss: 2.5001 - acc: 0.5118 - f1_score: 0.4921 - val_loss: 2.5002 - val_acc: 0.5470 - val_f1_score: 0.5282
+Epoch 56/300
+24/24 - 1s - loss: 2.5000 - acc: 0.5162 - f1_score: 0.4979 - val_loss: 2.5001 - val_acc: 0.5413 - val_f1_score: 0.5245
+Epoch 57/300
+24/24 - 1s - loss: 2.4999 - acc: 0.5154 - f1_score: 0.4988 - val_loss: 2.5000 - val_acc: 0.5356 - val_f1_score: 0.5207
+Epoch 58/300
+24/24 - 1s - loss: 2.4999 - acc: 0.5160 - f1_score: 0.4994 - val_loss: 2.5000 - val_acc: 0.5271 - val_f1_score: 0.5133
+Epoch 59/300
+24/24 - 1s - loss: 2.4998 - acc: 0.5191 - f1_score: 0.5032 - val_loss: 2.4999 - val_acc: 0.5157 - val_f1_score: 0.5044
+Epoch 60/300
+24/24 - 1s - loss: 2.4997 - acc: 0.5190 - f1_score: 0.5045 - val_loss: 2.4998 - val_acc: 0.5043 - val_f1_score: 0.4944
+Epoch 61/300
+24/24 - 1s - loss: 2.4996 - acc: 0.5221 - f1_score: 0.5106 - val_loss: 2.4998 - val_acc: 0.5128 - val_f1_score: 0.5043
+Epoch 62/300
+24/24 - 1s - loss: 2.4995 - acc: 0.5219 - f1_score: 0.5120 - val_loss: 2.4997 - val_acc: 0.5071 - val_f1_score: 0.5000
+Epoch 63/300
+24/24 - 1s - loss: 2.4994 - acc: 0.5244 - f1_score: 0.5143 - val_loss: 2.4996 - val_acc: 0.4986 - val_f1_score: 0.4923
+Epoch 64/300
+24/24 - 1s - loss: 2.4993 - acc: 0.5244 - f1_score: 0.5150 - val_loss: 2.4996 - val_acc: 0.4986 - val_f1_score: 0.4929
+Epoch 65/300
+24/24 - 1s - loss: 2.4992 - acc: 0.5234 - f1_score: 0.5159 - val_loss: 2.4995 - val_acc: 0.4957 - val_f1_score: 0.4904
+Epoch 66/300
+24/24 - 1s - loss: 2.4991 - acc: 0.5244 - f1_score: 0.5179 - val_loss: 2.4994 - val_acc: 0.4957 - val_f1_score: 0.4910
+Epoch 67/300
+24/24 - 1s - loss: 2.4990 - acc: 0.5260 - f1_score: 0.5210 - val_loss: 2.4994 - val_acc: 0.4900 - val_f1_score: 0.4858
+Epoch 68/300
+24/24 - 1s - loss: 2.4989 - acc: 0.5259 - f1_score: 0.5212 - val_loss: 2.4993 - val_acc: 0.4957 - val_f1_score: 0.4920
+Epoch 69/300
+24/24 - 1s - loss: 2.4988 - acc: 0.5259 - f1_score: 0.5207 - val_loss: 2.4992 - val_acc: 0.4986 - val_f1_score: 0.4960
+Epoch 70/300
+24/24 - 1s - loss: 2.4987 - acc: 0.5245 - f1_score: 0.5200 - val_loss: 2.4991 - val_acc: 0.5014 - val_f1_score: 0.4991
+Epoch 71/300
+24/24 - 1s - loss: 2.4986 - acc: 0.5265 - f1_score: 0.5220 - val_loss: 2.4991 - val_acc: 0.4986 - val_f1_score: 0.4964
+Epoch 72/300
+24/24 - 1s - loss: 2.4985 - acc: 0.5278 - f1_score: 0.5244 - val_loss: 2.4990 - val_acc: 0.4929 - val_f1_score: 0.4911
+Epoch 73/300
+24/24 - 1s - loss: 2.4984 - acc: 0.5283 - f1_score: 0.5258 - val_loss: 2.4989 - val_acc: 0.4957 - val_f1_score: 0.4941
+Restoring model weights from the end of the best epoch.
+Epoch 00073: early stopping
+WARNING:tensorflow:5 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f193901be50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+              precision    recall  f1-score   support
+
+           0       0.65      0.62      0.63       218
+           1       0.42      0.45      0.43       133
+
+    accuracy                           0.56       351
+   macro avg       0.53      0.54      0.53       351
+weighted avg       0.56      0.56      0.56       351
+
+2022-09-09 12:58:29.076521: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:58:29.076551: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:58:29.076624: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:58:29.076640: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1717
+Epoch 1/300
+2022-09-09 12:58:30.564811: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:58:30.564847: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:58:30.564903: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:58:30.668599: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:58:30.671107: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:58:30.687695: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:58:30.694837: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30
+2022-09-09 12:58:30.697559: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30/sasquatch.trace.json.gz
+2022-09-09 12:58:30.713725: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30
+2022-09-09 12:58:30.720487: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30/sasquatch.memory_profile.json.gz
+2022-09-09 12:58:30.733370: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125829/train/plugins/profile/2022_09_09_12_58_30/sasquatch.kernel_stats.pb
+
+25/25 - 3s - loss: 2.5053 - acc: 0.5021 - f1_score: 0.3343 - val_loss: 2.5077 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 2/300
+25/25 - 1s - loss: 2.5052 - acc: 0.5021 - f1_score: 0.3343 - val_loss: 2.5075 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 3/300
+25/25 - 1s - loss: 2.5051 - acc: 0.5021 - f1_score: 0.3343 - val_loss: 2.5074 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 4/300
+25/25 - 1s - loss: 2.5050 - acc: 0.5022 - f1_score: 0.3346 - val_loss: 2.5073 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 5/300
+25/25 - 1s - loss: 2.5049 - acc: 0.5022 - f1_score: 0.3346 - val_loss: 2.5072 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 6/300
+25/25 - 1s - loss: 2.5048 - acc: 0.5022 - f1_score: 0.3346 - val_loss: 2.5071 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 7/300
+25/25 - 1s - loss: 2.5046 - acc: 0.5022 - f1_score: 0.3346 - val_loss: 2.5070 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 8/300
+25/25 - 1s - loss: 2.5045 - acc: 0.5024 - f1_score: 0.3350 - val_loss: 2.5068 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 9/300
+25/25 - 1s - loss: 2.5044 - acc: 0.5024 - f1_score: 0.3350 - val_loss: 2.5067 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 10/300
+25/25 - 1s - loss: 2.5043 - acc: 0.5024 - f1_score: 0.3350 - val_loss: 2.5066 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 11/300
+25/25 - 1s - loss: 2.5042 - acc: 0.5024 - f1_score: 0.3350 - val_loss: 2.5065 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 12/300
+25/25 - 1s - loss: 2.5041 - acc: 0.5021 - f1_score: 0.3348 - val_loss: 2.5064 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 13/300
+25/25 - 1s - loss: 2.5040 - acc: 0.5021 - f1_score: 0.3348 - val_loss: 2.5063 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 14/300
+25/25 - 1s - loss: 2.5039 - acc: 0.5022 - f1_score: 0.3352 - val_loss: 2.5062 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 15/300
+25/25 - 1s - loss: 2.5038 - acc: 0.5024 - f1_score: 0.3361 - val_loss: 2.5061 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 16/300
+25/25 - 1s - loss: 2.5037 - acc: 0.5021 - f1_score: 0.3360 - val_loss: 2.5060 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 17/300
+25/25 - 1s - loss: 2.5036 - acc: 0.5016 - f1_score: 0.3358 - val_loss: 2.5059 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 18/300
+25/25 - 1s - loss: 2.5035 - acc: 0.5019 - f1_score: 0.3365 - val_loss: 2.5058 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 19/300
+25/25 - 1s - loss: 2.5034 - acc: 0.5018 - f1_score: 0.3361 - val_loss: 2.5057 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 20/300
+25/25 - 1s - loss: 2.5033 - acc: 0.5016 - f1_score: 0.3363 - val_loss: 2.5056 - val_acc: 0.4706 - val_f1_score: 0.3200
+Epoch 21/300
+25/25 - 1s - loss: 2.5032 - acc: 0.5011 - f1_score: 0.3361 - val_loss: 2.5055 - val_acc: 0.4706 - val_f1_score: 0.3200
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+WARNING:tensorflow:5 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f193904cc10> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+              precision    recall  f1-score   support
+
+           0       1.00      0.47      0.64       221
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.47       221
+   macro avg       0.50      0.24      0.32       221
+weighted avg       1.00      0.47      0.64       221
+
+2022-09-09 12:58:57.382822: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:58:57.382855: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:58:57.382939: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:58:57.382961: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1818
+Epoch 1/300
+2022-09-09 12:58:58.817783: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:58:58.817818: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:58:58.817872: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:58:58.919297: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:58:58.921722: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:58:58.934998: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:58:58.945090: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58
+2022-09-09 12:58:58.950012: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58/sasquatch.trace.json.gz
+2022-09-09 12:58:58.969622: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58
+2022-09-09 12:58:58.975389: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58/sasquatch.memory_profile.json.gz
+2022-09-09 12:58:58.998534: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125857/train/plugins/profile/2022_09_09_12_58_58/sasquatch.kernel_stats.pb
+
+24/24 - 2s - loss: 2.5050 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5107 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 2/300
+24/24 - 1s - loss: 2.5049 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5106 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 3/300
+24/24 - 1s - loss: 2.5048 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5105 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 4/300
+24/24 - 1s - loss: 2.5047 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5104 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 5/300
+24/24 - 1s - loss: 2.5046 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5104 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 6/300
+24/24 - 1s - loss: 2.5045 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5103 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 7/300
+24/24 - 1s - loss: 2.5044 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5102 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 8/300
+24/24 - 1s - loss: 2.5043 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5101 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 9/300
+24/24 - 1s - loss: 2.5042 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5101 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 10/300
+24/24 - 1s - loss: 2.5041 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5100 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 11/300
+24/24 - 1s - loss: 2.5040 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5099 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 12/300
+24/24 - 1s - loss: 2.5039 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5099 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 13/300
+24/24 - 1s - loss: 2.5038 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5098 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 14/300
+24/24 - 1s - loss: 2.5037 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5098 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 15/300
+24/24 - 1s - loss: 2.5036 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5097 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 16/300
+24/24 - 1s - loss: 2.5035 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5096 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 17/300
+24/24 - 1s - loss: 2.5034 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5096 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 18/300
+24/24 - 1s - loss: 2.5033 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5095 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 19/300
+24/24 - 1s - loss: 2.5032 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5094 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 20/300
+24/24 - 1s - loss: 2.5031 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5093 - val_acc: 0.3429 - val_f1_score: 0.2553
+Epoch 21/300
+24/24 - 1s - loss: 2.5030 - acc: 0.5130 - f1_score: 0.3391 - val_loss: 2.5093 - val_acc: 0.3429 - val_f1_score: 0.2553
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+WARNING:tensorflow:5 out of the last 12 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f19543523a0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+              precision    recall  f1-score   support
+
+           0       1.00      0.34      0.51       455
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.34       455
+   macro avg       0.50      0.17      0.26       455
+weighted avg       1.00      0.34      0.51       455
+
+2022-09-09 12:59:24.751431: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:59:24.751459: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:59:24.751549: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:59:24.751570: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1892
+Epoch 1/300
+2022-09-09 12:59:26.167697: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 12:59:26.167733: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 12:59:26.167786: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 12:59:26.269543: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 12:59:26.272087: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 12:59:26.284713: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 12:59:26.294573: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26
+2022-09-09 12:59:26.297019: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26/sasquatch.trace.json.gz
+2022-09-09 12:59:26.315322: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26
+2022-09-09 12:59:26.322088: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26/sasquatch.memory_profile.json.gz
+2022-09-09 12:59:26.332678: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-125924/train/plugins/profile/2022_09_09_12_59_26/sasquatch.kernel_stats.pb
+
+24/24 - 3s - loss: 2.5067 - acc: 0.4677 - f1_score: 0.3186 - val_loss: 2.4876 - val_acc: 0.9697 - val_f1_score: 0.4923
+Epoch 2/300
+24/24 - 1s - loss: 2.5064 - acc: 0.4680 - f1_score: 0.3193 - val_loss: 2.4890 - val_acc: 0.9697 - val_f1_score: 0.4923
+Epoch 3/300
+24/24 - 1s - loss: 2.5062 - acc: 0.4678 - f1_score: 0.3195 - val_loss: 2.4904 - val_acc: 0.9697 - val_f1_score: 0.4923
+Epoch 4/300
+24/24 - 1s - loss: 2.5060 - acc: 0.4678 - f1_score: 0.3217 - val_loss: 2.4918 - val_acc: 0.9674 - val_f1_score: 0.4917
+Epoch 5/300
+24/24 - 1s - loss: 2.5058 - acc: 0.4675 - f1_score: 0.3242 - val_loss: 2.4932 - val_acc: 0.9650 - val_f1_score: 0.4911
+Epoch 6/300
+24/24 - 1s - loss: 2.5056 - acc: 0.4665 - f1_score: 0.3270 - val_loss: 2.4944 - val_acc: 0.9604 - val_f1_score: 0.4899
+Epoch 7/300
+24/24 - 1s - loss: 2.5054 - acc: 0.4658 - f1_score: 0.3369 - val_loss: 2.4956 - val_acc: 0.9417 - val_f1_score: 0.4850
+Epoch 8/300
+24/24 - 1s - loss: 2.5052 - acc: 0.4642 - f1_score: 0.3469 - val_loss: 2.4968 - val_acc: 0.9207 - val_f1_score: 0.4794
+Epoch 9/300
+24/24 - 1s - loss: 2.5050 - acc: 0.4637 - f1_score: 0.3671 - val_loss: 2.4979 - val_acc: 0.9021 - val_f1_score: 0.4969
+Epoch 10/300
+24/24 - 1s - loss: 2.5048 - acc: 0.4658 - f1_score: 0.3907 - val_loss: 2.4991 - val_acc: 0.8462 - val_f1_score: 0.4729
+Epoch 11/300
+24/24 - 1s - loss: 2.5046 - acc: 0.4723 - f1_score: 0.4239 - val_loss: 2.5002 - val_acc: 0.7599 - val_f1_score: 0.4588
+Epoch 12/300
+24/24 - 1s - loss: 2.5044 - acc: 0.4778 - f1_score: 0.4487 - val_loss: 2.5012 - val_acc: 0.6900 - val_f1_score: 0.4356
+Epoch 13/300
+24/24 - 1s - loss: 2.5043 - acc: 0.4862 - f1_score: 0.4748 - val_loss: 2.5023 - val_acc: 0.5897 - val_f1_score: 0.3959
+Epoch 14/300
+24/24 - 1s - loss: 2.5041 - acc: 0.4992 - f1_score: 0.4972 - val_loss: 2.5033 - val_acc: 0.5058 - val_f1_score: 0.3633
+Epoch 15/300
+24/24 - 1s - loss: 2.5039 - acc: 0.5111 - f1_score: 0.5107 - val_loss: 2.5043 - val_acc: 0.4219 - val_f1_score: 0.3215
+Epoch 16/300
+24/24 - 1s - loss: 2.5038 - acc: 0.5202 - f1_score: 0.5149 - val_loss: 2.5053 - val_acc: 0.3473 - val_f1_score: 0.2779
+Epoch 17/300
+24/24 - 1s - loss: 2.5036 - acc: 0.5269 - f1_score: 0.5108 - val_loss: 2.5062 - val_acc: 0.2984 - val_f1_score: 0.2509
+Epoch 18/300
+24/24 - 1s - loss: 2.5035 - acc: 0.5328 - f1_score: 0.5018 - val_loss: 2.5072 - val_acc: 0.2331 - val_f1_score: 0.2055
+Epoch 19/300
+24/24 - 1s - loss: 2.5033 - acc: 0.5338 - f1_score: 0.4839 - val_loss: 2.5081 - val_acc: 0.1911 - val_f1_score: 0.1761
+Epoch 20/300
+24/24 - 1s - loss: 2.5032 - acc: 0.5333 - f1_score: 0.4646 - val_loss: 2.5089 - val_acc: 0.1608 - val_f1_score: 0.1515
+Epoch 21/300
+24/24 - 1s - loss: 2.5030 - acc: 0.5315 - f1_score: 0.4427 - val_loss: 2.5097 - val_acc: 0.1352 - val_f1_score: 0.1304
+Epoch 22/300
+24/24 - 1s - loss: 2.5029 - acc: 0.5315 - f1_score: 0.4240 - val_loss: 2.5106 - val_acc: 0.0956 - val_f1_score: 0.0945
+Epoch 23/300
+24/24 - 1s - loss: 2.5027 - acc: 0.5375 - f1_score: 0.4139 - val_loss: 2.5114 - val_acc: 0.0723 - val_f1_score: 0.0721
+Epoch 24/300
+24/24 - 1s - loss: 2.5026 - acc: 0.5363 - f1_score: 0.3988 - val_loss: 2.5122 - val_acc: 0.0629 - val_f1_score: 0.0629
+Epoch 25/300
+24/24 - 1s - loss: 2.5024 - acc: 0.5353 - f1_score: 0.3841 - val_loss: 2.5130 - val_acc: 0.0559 - val_f1_score: 0.0559
+Epoch 26/300
+24/24 - 1s - loss: 2.5023 - acc: 0.5355 - f1_score: 0.3770 - val_loss: 2.5138 - val_acc: 0.0466 - val_f1_score: 0.0464
+Epoch 27/300
+24/24 - 1s - loss: 2.5022 - acc: 0.5370 - f1_score: 0.3747 - val_loss: 2.5146 - val_acc: 0.0420 - val_f1_score: 0.0416
+Epoch 28/300
+24/24 - 1s - loss: 2.5020 - acc: 0.5350 - f1_score: 0.3650 - val_loss: 2.5154 - val_acc: 0.0350 - val_f1_score: 0.0343
+Epoch 29/300
+24/24 - 1s - loss: 2.5019 - acc: 0.5342 - f1_score: 0.3598 - val_loss: 2.5161 - val_acc: 0.0350 - val_f1_score: 0.0343
+Restoring model weights from the end of the best epoch.
+Epoch 00029: early stopping
+WARNING:tensorflow:5 out of the last 13 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f195430c670> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+              precision    recall  f1-score   support
+
+           0       0.93      0.97      0.95       398
+           1       0.08      0.03      0.05        31
+
+    accuracy                           0.90       429
+   macro avg       0.50      0.50      0.50       429
+weighted avg       0.87      0.90      0.88       429
+
+2022-09-09 13:00:01.378281: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 13:00:01.378316: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 13:00:01.378388: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 13:00:01.378409: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1929
+Epoch 1/300
+2022-09-09 13:00:02.864741: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 13:00:02.864775: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 13:00:02.864828: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 13:00:02.973685: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 13:00:02.976353: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 13:00:02.989159: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 13:00:03.000312: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02
+2022-09-09 13:00:03.003082: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02/sasquatch.trace.json.gz
+2022-09-09 13:00:03.020030: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02
+2022-09-09 13:00:03.025999: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02/sasquatch.memory_profile.json.gz
+2022-09-09 13:00:03.044280: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130001/train/plugins/profile/2022_09_09_13_00_02/sasquatch.kernel_stats.pb
+
+24/24 - 2s - loss: 2.5044 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5178 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 2/300
+24/24 - 1s - loss: 2.5043 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5181 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 3/300
+24/24 - 1s - loss: 2.5042 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5183 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 4/300
+24/24 - 1s - loss: 2.5041 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5185 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 5/300
+24/24 - 1s - loss: 2.5040 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5188 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 6/300
+24/24 - 1s - loss: 2.5039 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5190 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 7/300
+24/24 - 1s - loss: 2.5038 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5193 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 8/300
+24/24 - 1s - loss: 2.5036 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5196 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 9/300
+24/24 - 1s - loss: 2.5035 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5198 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 10/300
+24/24 - 1s - loss: 2.5034 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5200 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 11/300
+24/24 - 1s - loss: 2.5033 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5202 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 12/300
+24/24 - 1s - loss: 2.5032 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5204 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 13/300
+24/24 - 1s - loss: 2.5031 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5205 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 14/300
+24/24 - 1s - loss: 2.5030 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5207 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 15/300
+24/24 - 1s - loss: 2.5029 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5209 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 16/300
+24/24 - 1s - loss: 2.5028 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5211 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 17/300
+24/24 - 1s - loss: 2.5027 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5212 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 18/300
+24/24 - 1s - loss: 2.5026 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5214 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 19/300
+24/24 - 1s - loss: 2.5025 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5216 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 20/300
+24/24 - 1s - loss: 2.5024 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5217 - val_acc: 0.2222 - val_f1_score: 0.1818
+Epoch 21/300
+24/24 - 1s - loss: 2.5023 - acc: 0.5228 - f1_score: 0.3433 - val_loss: 2.5219 - val_acc: 0.2222 - val_f1_score: 0.1818
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.22      0.36       468
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.22       468
+   macro avg       0.50      0.11      0.18       468
+weighted avg       1.00      0.22      0.36       468
+
+2022-09-09 13:00:28.779791: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 13:00:28.779816: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 13:00:28.779873: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 13:00:28.779886: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+Testing on 1933
+Epoch 1/300
+2022-09-09 13:00:30.220109: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-09 13:00:30.220145: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-09 13:00:30.220199: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-09 13:00:30.323163: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-09 13:00:30.325660: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-09 13:00:30.338165: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-09 13:00:30.354681: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30
+2022-09-09 13:00:30.359199: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30/sasquatch.trace.json.gz
+2022-09-09 13:00:30.380704: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30
+2022-09-09 13:00:30.386482: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30/sasquatch.memory_profile.json.gz
+2022-09-09 13:00:30.403408: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220909-124942/t_b/20220909-130028/train/plugins/profile/2022_09_09_13_00_30/sasquatch.kernel_stats.pb
+
+25/25 - 2s - loss: 2.5050 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5144 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 2/300
+25/25 - 1s - loss: 2.5049 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5142 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 3/300
+25/25 - 1s - loss: 2.5048 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5141 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 4/300
+25/25 - 1s - loss: 2.5047 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5139 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 5/300
+25/25 - 1s - loss: 2.5046 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5138 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 6/300
+25/25 - 1s - loss: 2.5045 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5138 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 7/300
+25/25 - 1s - loss: 2.5044 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5136 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 8/300
+25/25 - 1s - loss: 2.5043 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5135 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 9/300
+25/25 - 1s - loss: 2.5042 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5133 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 10/300
+25/25 - 1s - loss: 2.5041 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5132 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 11/300
+25/25 - 1s - loss: 2.5040 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5131 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 12/300
+25/25 - 1s - loss: 2.5039 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5130 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 13/300
+25/25 - 1s - loss: 2.5038 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5129 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 14/300
+25/25 - 1s - loss: 2.5037 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5128 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 15/300
+25/25 - 1s - loss: 2.5036 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5127 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 16/300
+25/25 - 1s - loss: 2.5035 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5126 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 17/300
+25/25 - 1s - loss: 2.5034 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5125 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 18/300
+25/25 - 1s - loss: 2.5033 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5124 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 19/300
+25/25 - 1s - loss: 2.5032 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5123 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 20/300
+25/25 - 1s - loss: 2.5032 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5122 - val_acc: 0.2941 - val_f1_score: 0.2273
+Epoch 21/300
+25/25 - 1s - loss: 2.5031 - acc: 0.5083 - f1_score: 0.3370 - val_loss: 2.5122 - val_acc: 0.2941 - val_f1_score: 0.2273
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+              precision    recall  f1-score   support
+
+           0       1.00      0.29      0.45       221
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.29       221
+   macro avg       0.50      0.15      0.23       221
+weighted avg       1.00      0.29      0.45       221
+
+--------------------------------------------------------------------------
+Classfication report for Type ff, Stage ff
+Average Accuracy:  0.4385374558345294
+F1 score for Baseline:  0.5608812594096908
+F1 score for Stress:  0.0731683473439854
+Macro F1:  0.31702480337683814
+Weighted F1:  0.5341793002437868
+--------------------------------------------------------------------------

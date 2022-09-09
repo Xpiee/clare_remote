@@ -77,6 +77,77 @@ seed(2)
 tf.random.set_seed(42)
 print(tf.keras.__version__)
 
+def training_one_modality(mod1, sub_label_ecg, i, tensorbrd_dir, in_shape, mod_names, save_info, num_classes):
+
+    model_arch, model_weights = save_info
+
+    opt = tf.keras.optimizers.Adadelta(learning_rate = 0.0005, rho=0.95)
+    tb = tf.keras.callbacks.TensorBoard(log_dir = os.path.join(tensorbrd_dir,
+                                                                        datetime.datetime.now().strftime("%Y%m%d-%H%M%S")))
+
+    X_test_1 = mod1[i]
+    y_test = sub_label_ecg[i]
+
+    X_test_1 = vstack(X_test_1)
+    y_test = [x for z in y_test for x in z]
+
+    X_1 = [vstack(v) for k, v in mod1.items() if k != i]
+    y_train = [hstack(np.asarray(v)) for k, v in sub_label_ecg.items() if k != i]
+    X_1 = vstack(X_1)
+
+    y_train = hstack(np.asarray(y_train))
+    y_train = [1 if x > 5 else 0 for x in y_train]
+    y_test = [1 if x > 5 else 0 for x in y_test]
+    
+    y = tf.keras.utils.to_categorical(y_train)
+    y_test = tf.keras.utils.to_categorical(y_test)
+
+    callbacks_list = tf.keras.callbacks.EarlyStopping(monitor='val_f1_score',
+                                                        patience=20, verbose=1, mode='max', 
+                                                        restore_best_weights=True)
+
+    class_wgt = class_weight.compute_class_weight('balanced', classes=np.unique(y_train), y=y_train)
+    wgt = {0:round(class_wgt[0], 2), 1: round(class_wgt[1], 2)}
+#             wgt = {0:round(class_wgt[0], 2), 1: round(class_wgt[1], 2), 2: round(class_wgt[2], 2)}
+
+    model = mega_model.unimodal(in_shape,
+                                mod_name=mod_names[0],
+                                classes=num_classes, 
+                                is_unimodal=True)
+    mod_1 = inspect.getsource(mega_model.multimodal_classifier)
+    
+    model.compile(optimizer=opt, loss=focal_loss_fx(), metrics=['acc', tfa.metrics.F1Score(num_classes=num_classes, threshold=0.5, average = 'macro')])
+    print('Testing on {}'.format(i))
+
+    hist = model.fit([X_1], y, epochs=300, verbose=2, shuffle=True,
+                    batch_size = 256, validation_data = ([X_test_1], y_test),
+                    callbacks=[tb, callbacks_list]) # , class_weight=wgt
+    y_pred_i = model.predict([X_test_1], batch_size = 128)
+
+    pred_list = list()
+    test_y = list()
+
+    for n in range(len(y_pred_i)):
+        pred_list.append(np.argmax(y_pred_i[n]))
+        test_y.append(np.argmax(y_test[n]))
+
+    gc.collect()
+
+    print(classification_report(pred_list, test_y))
+    a = classification_report(pred_list, test_y,
+                                target_names = ['Baseline', 'Stress'],
+                                output_dict=True)
+
+    roc_auc = roc_auc_score(y_test.astype('int'), y_pred_i, multi_class='ovo', average='weighted')
+    scores = {'roc_auc': roc_auc, 'pred_prob': y_pred_i,
+                'pred': pred_list, 'test_cat': y_test, 'test': test_y}
+
+    model.save(os.path.join(model_arch, 'model_{}'.format(i)))
+    model_wgt_path = os.path.join(model_weights, '_model_{}'.format(i))
+    model.save_weights(os.path.join(model_wgt_path, 'model_{}'.format(i)))
+
+    return a, hist, roc_auc, scores, mod_1
+
 def training_binary_modality(mod1, mod2, sub_label_ecg, i, tensorbrd_dir, in_shape, mod_names, save_info, num_classes):
 
     model_arch, model_weights = save_info

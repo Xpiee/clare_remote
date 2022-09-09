@@ -368,11 +368,16 @@ def conv_blk1D_(X_eda_ip, filters, f, strides, stage, stype, l2_cnn):
     return X
 
 
-def unimodal(X_in, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, glrt = glorot_uniform(seed=4), classes=2, is_unimodal=True):
+def unimodal(X_in_shpe, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, glrt = glorot_uniform(seed=4), classes=2, is_unimodal=True):
 
     if is_unimodal:
-        X_in = Input(X_in)
-     
+        X_in = Input(X_in_shpe[0])
+        glrt = glorot_uniform(seed=4)
+        l2_dense = tensorflow.keras.regularizers.l2(l = 0.001)
+        l2_cnn = tensorflow.keras.regularizers.l2(l = 0.001)
+
+    else: X_in = X_in_shpe
+
     X = conv_blk1D(X_in, [32, 32], [64, 64], [1, 3], 'stage1', mod_name, l2_cnn)
     X = conv_blk1D(X, [64, 64], [32, 32], [1, 3], 'stage2', mod_name, l2_cnn)
     X = conv_blk1D(X, [128, 128], [17, 17], [1, 3], 'stage3', mod_name, l2_cnn)
@@ -398,11 +403,14 @@ def unimodal(X_in, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, glrt = glorot
     return dense_X
 
 
-def unimodaleeg(X_in, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, glrt = glorot_uniform(seed=4), classes=2, is_unimodal=True):
+def unimodaleeg(X_in_shpe, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, glrt = glorot_uniform(seed=4), classes=2, is_unimodal=True):
 
     if is_unimodal:
-        X_in = Input(X_in)
-     
+        X_in = Input(X_in_shpe[0])
+        glrt = glorot_uniform(seed=4)
+        l2_dense = tensorflow.keras.regularizers.l2(l = 0.001)
+        l2_cnn = tensorflow.keras.regularizers.l2(l = 0.001)
+
     X = conv_blk1D(X_in, [32, 32], [32, 32], [1, 3], 'stage1', mod_name, l2_cnn)
     X = conv_blk1D(X, [64, 64], [32, 32], [1, 3], 'stage2', mod_name, l2_cnn)
     X = conv_blk1D(X, [128, 128], [17, 17], [1, 3], 'stage3', mod_name, l2_cnn)
@@ -427,6 +435,78 @@ def unimodaleeg(X_in, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, glrt = glo
 
     return dense_X
 
+def gze_arch(X_in_shpe, mod_name='gze',
+            l2_dense = 0.01, l2_cnn = 0.01,
+            glrt = glorot_uniform(seed=4), classes=2, is_unimodal=True):
+
+    if is_unimodal:
+        X_in = Input(X_in_shpe[0])
+        glrt = glorot_uniform(seed=4)
+        l2_dense = tensorflow.keras.regularizers.l2(l = 0.001)
+        l2_cnn = tensorflow.keras.regularizers.l2(l = 0.001)
+
+    else: X_in = X_in_shpe
+
+    X = conv_blk1D(X_in, [32, 32], [64, 64], [1, 3], 'stage1', mod_name, l2_cnn)
+    X = conv_blk1D(X, [64, 64], [32, 32], [1, 3], 'stage2', mod_name, l2_cnn)
+    # X = conv_blk1D(X, [128, 128], [17, 17], [1, 3], 'stage3', mod_name, l2_cnn)
+    # X = conv_blk1D(X, [256, 256], [7, 7], [1, 3], 'stage4', mod_name, l2_cnn)
+
+    flatten_X = Flatten()(X)
+
+    dense_X = Dense(128, activation = 'relu', 
+                kernel_initializer = glrt,
+                kernel_regularizer = l2_dense)(flatten_X)
+    
+    dense_X= Dense(128, activation = 'relu', 
+                kernel_initializer = glrt,
+                kernel_regularizer = l2_dense, name=mod_name + "bf_merge")(dense_X)
+
+    if is_unimodal:
+        out = Dense(classes, activation = 'softmax', 
+                    name = 'output', kernel_initializer = glrt,
+                    kernel_regularizer = l2_dense)(dense_X)
+        model = Model(inputs = [X_in], outputs = out)
+        return model
+
+    return dense_X
+
+def eeg_arch(X_in_shpe, mod_name='gze',
+            l2_dense = 0.01, l2_cnn = 0.01,
+            glrt = glorot_uniform(seed=4), classes=2, is_unimodal=True):
+
+    if is_unimodal:
+        X_in = Input(X_in_shpe[0])
+        glrt = glorot_uniform(seed=4)
+        l2_dense = tensorflow.keras.regularizers.l2(l = 0.001)
+        l2_cnn = tensorflow.keras.regularizers.l2(l = 0.001)
+
+    else: X_in = X_in_shpe
+
+    X = conv_blk1D(X_in, [32, 32], [32, 32], [1, 3], 'stage1', mod_name, l2_cnn)
+    X = conv_blk1D(X, [64, 64], [32, 32], [1, 3], 'stage2', mod_name, l2_cnn)
+    X = conv_blk1D(X, [128, 128], [17, 17], [1, 3], 'stage3', mod_name, l2_cnn)
+    X = conv_blk1D(X, [256, 256], [7, 7], [1, 3], 'stage4', mod_name, l2_cnn)
+
+    flatten_X = Flatten()(X)
+
+    dense_X = Dense(128, activation = 'relu', 
+                kernel_initializer = glrt,
+                kernel_regularizer = l2_dense)(flatten_X)
+    
+    dense_X= Dense(64, activation = 'relu', 
+                kernel_initializer = glrt,
+                kernel_regularizer = l2_dense, name=mod_name + "bf_merge")(dense_X)
+
+    if is_unimodal:
+        out = Dense(classes, activation = 'softmax', 
+                    name = 'output', kernel_initializer = glrt,
+                    kernel_regularizer = l2_dense)(dense_X)
+        model = Model(inputs = [X_in], outputs = out)
+        return model
+
+    return dense_X
+
 
 def multimodal_classifier(input_shape=[(2560, 1), (2560, 3)], classes=2, modality_names=['ecg', 'eda']):
     with tf.device('/device:GPU:0'):
@@ -440,51 +520,112 @@ def multimodal_classifier(input_shape=[(2560, 1), (2560, 3)], classes=2, modalit
         if len(input_shape) == 2:
             X_in_1 = Input(input_shape[0])
             X_in_2 = Input(input_shape[1])
-            
-            
+                        
             print(X_in_1.shape)
             print(X_in_2.shape)
 
             model_inputs = [X_in_1, X_in_2]
 
-            X_1 = unimodal(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
-            X_2 = unimodal(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            if modality_names[0] == 'gze':
+                X_1 = gze_arch(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            elif modality_names[0] == 'eeg':
+                X_1 = eeg_arch(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            else: 
+                X_1 = unimodal(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+
+            if modality_names[1] == 'gze':
+                X_2 = gze_arch(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            elif modality_names[1] == 'eeg':
+                X_2 = eeg_arch(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            else: 
+                X_2 = unimodal(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)            
+
+            # X_1 = unimodal(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            # X_2 = unimodal(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
             merged = concatenate([X_1, X_2])
 
         if len(input_shape) == 3:
-            X_1_ip = Input(input_shape[0])
-            X_2_ip = Input(input_shape[1])
-            X_3_ip = Input(input_shape[2])
+            X_in_1 = Input(input_shape[0])
+            X_in_2 = Input(input_shape[1])
+            X_in_3 = Input(input_shape[2])
 
-            print(X_1_ip.shape)
-            print(X_2_ip.shape)
-            print(X_3_ip.shape)
+            print(X_in_1.shape)
+            print(X_in_2.shape)
+            print(X_in_3.shape)
 
-            model_inputs = [X_1_ip, X_2_ip, X_3_ip]
+            model_inputs = [X_in_1, X_in_2, X_in_3]
 
-            X_1 = unimodal(X_1_ip, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
-            X_2 = unimodal(X_2_ip, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
-            X_3 = unimodal(X_3_ip, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            if modality_names[0] == 'gze':
+                X_1 = gze_arch(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            elif modality_names[0] == 'eeg':
+                X_1 = eeg_arch(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            else: 
+                X_1 = unimodal(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
 
+            if modality_names[1] == 'gze':
+                X_2 = gze_arch(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            elif modality_names[1] == 'eeg':
+                X_2 = eeg_arch(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            else: 
+                X_2 = unimodal(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+
+            if modality_names[2] == 'gze':
+                X_3 = gze_arch(X_in_3, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            elif modality_names[2] == 'eeg':
+                X_3 = eeg_arch(X_in_3, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            else: 
+                X_3 = unimodal(X_in_3, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+
+            # X_1 = unimodal(X_1_ip, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            # X_2 = unimodal(X_2_ip, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            # X_3 = unimodal(X_3_ip, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
             merged = concatenate([X_1, X_2, X_3])
 
         if len(input_shape) == 4:
-            X_1_ip = Input(input_shape[0])
-            X_2_ip = Input(input_shape[1])
-            X_3_ip = Input(input_shape[2])
-            X_4_ip = Input(input_shape[3])
+            X_in_1 = Input(input_shape[0])
+            X_in_2 = Input(input_shape[1])
+            X_in_3 = Input(input_shape[2])
+            X_in_4 = Input(input_shape[3])
 
-            print(X_1_ip.shape)
-            print(X_2_ip.shape)
-            print(X_3_ip.shape)
-            print(X_4_ip.shape)
+            print(X_in_1.shape)
+            print(X_in_2.shape)
+            print(X_in_3.shape)
+            print(X_in_4.shape)
 
-            model_inputs = [X_1_ip, X_2_ip, X_3_ip, X_4_ip]
+            model_inputs = [X_in_1, X_in_2, X_in_3, X_in_4]
 
-            X_1 = unimodal(X_1_ip, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
-            X_2 = unimodal(X_2_ip, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
-            X_3 = unimodal(X_3_ip, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
-            X_4 = unimodal(X_4_ip, modality_names[3], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            if modality_names[0] == 'gze':
+                X_1 = gze_arch(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            elif modality_names[0] == 'eeg':
+                X_1 = eeg_arch(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            else: 
+                X_1 = unimodal(X_in_1, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+
+            if modality_names[1] == 'gze':
+                X_2 = gze_arch(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            elif modality_names[1] == 'eeg':
+                X_2 = eeg_arch(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            else: 
+                X_2 = unimodal(X_in_2, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+
+            if modality_names[2] == 'gze':
+                X_3 = gze_arch(X_in_3, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            elif modality_names[2] == 'eeg':
+                X_3 = eeg_arch(X_in_3, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            else: 
+                X_3 = unimodal(X_in_3, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+
+            if modality_names[3] == 'gze':
+                X_4 = gze_arch(X_in_4, modality_names[3], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            elif modality_names[3] == 'eeg':
+                X_4 = eeg_arch(X_in_4, modality_names[3], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            else: 
+                X_4 = unimodal(X_in_4, modality_names[3], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+
+            # X_1 = unimodal(X_1_ip, modality_names[0], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            # X_2 = unimodal(X_2_ip, modality_names[1], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            # X_3 = unimodal(X_3_ip, modality_names[2], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
+            # X_4 = unimodal(X_4_ip, modality_names[3], l2_dense, l2_cnn, glrt, classes=classes, is_unimodal=is_unimodal)
 
             merged = concatenate([X_1, X_2, X_3, X_4])
 
