@@ -389,7 +389,7 @@ def unimodal(X_in_shpe, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, glrt = g
                 kernel_initializer = glrt,
                 kernel_regularizer = l2_dense)(flatten_X)
     
-    dense_X= Dense(512, activation = 'relu', 
+    dense_X= Dense(128, activation = 'relu', 
                 kernel_initializer = glrt,
                 kernel_regularizer = l2_dense, name=mod_name + "bf_merge")(dense_X)
 

@@ -9,7 +9,7 @@ gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
     try:
         # Restrict TensorFlow to only use the fourth GPU
-        tf.config.experimental.set_visible_devices(gpus[5], 'GPU')
+        tf.config.experimental.set_visible_devices(gpus[4], 'GPU')
 
         # Currently, memory growth needs to be the same across GPUs
         for gpu in gpus:

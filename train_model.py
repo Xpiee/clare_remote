@@ -103,7 +103,7 @@ def training_one_modality(mod1, sub_label_ecg, i, tensorbrd_dir, in_shape, mod_n
     y_test = tf.keras.utils.to_categorical(y_test)
 
     callbacks_list = tf.keras.callbacks.EarlyStopping(monitor='val_f1_score',
-                                                        patience=20, verbose=1, mode='max', 
+                                                        patience=30, verbose=1, mode='max', 
                                                         restore_best_weights=True)
 
     class_wgt = class_weight.compute_class_weight('balanced', classes=np.unique(y_train), y=y_train)
@@ -152,7 +152,7 @@ def training_binary_modality(mod1, mod2, sub_label_ecg, i, tensorbrd_dir, in_sha
 
     model_arch, model_weights = save_info
 
-    opt = tf.keras.optimizers.Adadelta(learning_rate = 0.0005, rho=0.95)
+    opt = tf.keras.optimizers.Adam(learning_rate = 0.0001)
     tb = tf.keras.callbacks.TensorBoard(log_dir = os.path.join(tensorbrd_dir,
                                                                         datetime.datetime.now().strftime("%Y%m%d-%H%M%S")))
 
@@ -182,7 +182,7 @@ def training_binary_modality(mod1, mod2, sub_label_ecg, i, tensorbrd_dir, in_sha
     y_test = tf.keras.utils.to_categorical(y_test)
 
     callbacks_list = tf.keras.callbacks.EarlyStopping(monitor='val_f1_score',
-                                                        patience=20, verbose=1, mode='max', 
+                                                        patience=30, verbose=1, mode='max', 
                                                         restore_best_weights=True)
 
     class_wgt = class_weight.compute_class_weight('balanced', classes=np.unique(y_train), y=y_train)
@@ -233,7 +233,7 @@ def training_three_modality(mod1, mod2, mod3, sub_label_ecg, i, tensorbrd_dir, i
 
     model_arch, model_weights = save_info
 
-    opt = tf.keras.optimizers.Adadelta(learning_rate = 0.0005, rho=0.95)
+    opt = tf.keras.optimizers.Adam(learning_rate = 0.0001)
     tb = tf.keras.callbacks.TensorBoard(log_dir = os.path.join(tensorbrd_dir,
                                                                         datetime.datetime.now().strftime("%Y%m%d-%H%M%S")))
 
@@ -267,7 +267,7 @@ def training_three_modality(mod1, mod2, mod3, sub_label_ecg, i, tensorbrd_dir, i
     y_test = tf.keras.utils.to_categorical(y_test)
 
     callbacks_list = tf.keras.callbacks.EarlyStopping(monitor='val_f1_score',
-                                                        patience=20, verbose=1, mode='max', 
+                                                        patience=30, verbose=1, mode='max', 
                                                         restore_best_weights=True)
 
     class_wgt = class_weight.compute_class_weight('balanced', classes=np.unique(y_train), y=y_train)
@@ -318,7 +318,7 @@ def training_four_modality(mod1, mod2, mod3, mod4, sub_label_ecg, i, tensorbrd_d
 
     model_arch, model_weights = save_info
 
-    opt = tf.keras.optimizers.Adadelta(learning_rate = 0.0005, rho=0.95)
+    opt = tf.keras.optimizers.Adam(learning_rate = 0.0001)
     tb = tf.keras.callbacks.TensorBoard(log_dir = os.path.join(tensorbrd_dir,
                                                                         datetime.datetime.now().strftime("%Y%m%d-%H%M%S")))
 
@@ -356,7 +356,7 @@ def training_four_modality(mod1, mod2, mod3, mod4, sub_label_ecg, i, tensorbrd_d
     y_test = tf.keras.utils.to_categorical(y_test)
 
     callbacks_list = tf.keras.callbacks.EarlyStopping(monitor='val_f1_score',
-                                                        patience=20, verbose=1, mode='max', 
+                                                        patience=30, verbose=1, mode='max', 
                                                         restore_best_weights=True)
 
     class_wgt = class_weight.compute_class_weight('balanced', classes=np.unique(y_train), y=y_train)
