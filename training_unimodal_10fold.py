@@ -56,7 +56,7 @@ seed(2)
 tf.random.set_seed(42)
 print(tf.keras.__version__)
 
-main_path = r"/home/18ab106/pfiles/clare/Processed_Data_fold"
+main_path = r"/home/18ab106/pfiles/clare/Processed_Data_fold_overlap"
 with open(os.path.join(main_path, 'cola_labels.pickle'), 'rb') as handle:
     sub_label_ecg = pickle.load(handle)
 

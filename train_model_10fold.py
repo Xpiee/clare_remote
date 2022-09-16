@@ -13,7 +13,7 @@ if gpus:
 
         # Currently, memory growth needs to be the same across GPUs
         for gpu in gpus:
-            tf.config.experimental.set_memory_growth(gpu, True)
+            tf.config.experimental.set_memory_growth(gpu, False)
         logical_gpus = tf.config.experimental.list_logical_devices('GPU')
         print(len(gpus), "Physical GPUs,", len(logical_gpus), "Logical GPUs")
     except RuntimeError as e:
@@ -86,7 +86,7 @@ def training_one_modality(mod1: list, label: list, i: int,
     X_train, X_test = mod1
     y_train, y_test = label
 
-    opt = tf.keras.optimizers.Adadelta(learning_rate = 0.0005, rho=0.95)
+    opt = tf.keras.optimizers.Adadelta(learning_rate = 0.001, rho=0.95)
     tb = tf.keras.callbacks.TensorBoard(log_dir = os.path.join(tensorbrd_dir,
                                                                         datetime.datetime.now().strftime("%Y%m%d-%H%M%S")))
 
@@ -110,12 +110,12 @@ def training_one_modality(mod1: list, label: list, i: int,
                                     classes=num_classes, 
                                     is_unimodal=True)
     else:
-        model = mega_model.unimodal(in_shape,
+        model = mega_model.unimodal_Kfold(in_shape,
                                     mod_name=mod_names[0],
                                     classes=num_classes, 
                                     is_unimodal=True)
 
-    mod_1 = inspect.getsource(mega_model.multimodal_classifier)
+    mod_1 = inspect.getsource(mega_model.unimodal_Kfold)
     
     model.compile(optimizer=opt, loss=focal_loss_fx(),
                     metrics=['acc', tfa.metrics.F1Score(num_classes=num_classes, threshold=0.5, average = 'macro')])
