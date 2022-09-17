@@ -413,9 +413,9 @@ def unimodal_Kfold(X_in_shpe, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, gl
     else: X_in = X_in_shpe
 
     X = conv_blk1D(X_in, [32, 32], [64, 64], [1, 3], 'stage1', mod_name, l2_cnn)
-    # X = conv_blk1D(X, [64, 64], [32, 32], [1, 3], 'stage2', mod_name, l2_cnn)
-    # X = conv_blk1D(X, [128, 128], [17, 17], [1, 3], 'stage3', mod_name, l2_cnn)
-    # X = conv_blk1D(X, [256, 256], [7, 7], [1, 3], 'stage4', mod_name, l2_cnn)
+    X = conv_blk1D(X, [64, 64], [32, 32], [1, 3], 'stage2', mod_name, l2_cnn)
+    X = conv_blk1D(X, [128, 128], [17, 17], [1, 3], 'stage3', mod_name, l2_cnn)
+    X = conv_blk1D(X, [256, 256], [7, 7], [1, 3], 'stage4', mod_name, l2_cnn)
 
     flatten_X = Flatten()(X)
 
@@ -423,9 +423,9 @@ def unimodal_Kfold(X_in_shpe, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, gl
                 kernel_initializer = glrt,
                 kernel_regularizer = l2_dense)(flatten_X)
     
-    # dense_X= Dense(512, activation = 'relu', 
-    #             kernel_initializer = glrt,
-    #             kernel_regularizer = l2_dense, name=mod_name + "bf_merge")(dense_X)
+    dense_X= Dense(512, activation = 'relu', 
+                kernel_initializer = glrt,
+                kernel_regularizer = l2_dense, name=mod_name + "bf_merge")(dense_X)
 
     if is_unimodal:
         out = Dense(classes, activation = 'softmax', 
@@ -435,8 +435,6 @@ def unimodal_Kfold(X_in_shpe, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, gl
         return model
 
     return dense_X
-
-
 
 def unimodaleeg(X_in_shpe, mod_name='ecg', l2_dense = 0.01, l2_cnn = 0.01, glrt = glorot_uniform(seed=4), classes=2, is_unimodal=True):
 
