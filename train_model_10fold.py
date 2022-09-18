@@ -47,7 +47,7 @@ import scipy.signal as scisig
 from scipy.stats import zscore
 import matplotlib.pyplot as plt
 
-import mega_model
+import mega_model_kfold
 import mega_model_resnet
 from tensorflow.keras import backend as K
 
@@ -86,7 +86,7 @@ def training_one_modality(mod1: list, label: list, i: int,
     X_train, X_test = mod1
     y_train, y_test = label
 
-    opt = tf.keras.optimizers.Adadelta(learning_rate = 0.001, rho=0.95)
+    opt = tf.keras.optimizers.Adamax(learning_rate = 0.0005)
     tb = tf.keras.callbacks.TensorBoard(log_dir = os.path.join(tensorbrd_dir,
                                                                         datetime.datetime.now().strftime("%Y%m%d-%H%M%S")))
 
@@ -94,36 +94,33 @@ def training_one_modality(mod1: list, label: list, i: int,
                                                         patience=30, verbose=1, mode='max', 
                                                         restore_best_weights=True)
 
-    # class_wgt = class_weight.compute_class_weight('balanced', classes=np.unique(y_train), y=y_train)
-    # wgt = {0:round(class_wgt[0], 2), 1: round(class_wgt[1], 2)}
-#             wgt = {0:round(class_wgt[0], 2), 1: round(class_wgt[1], 2), 2: round(class_wgt[2], 2)}
+    # if mod_names[0] == 'gze':
+    #     model = mega_model.gze_arch(in_shape,
+    #                                 mod_name=mod_names[0],
+    #                                 classes=num_classes, 
+    #                                 is_unimodal=True)
 
-    if mod_names[0] == 'gze':
-        model = mega_model.gze_arch(in_shape,
+    if mod_names[0] == 'eeg':
+        model = mega_model_kfold.eeg_arch(in_shape,
                                     mod_name=mod_names[0],
                                     classes=num_classes, 
                                     is_unimodal=True)
+        mod_1 = inspect.getsource(mega_model_kfold.eeg_arch)
 
-    elif mod_names[0] == 'eeg':
-        model = mega_model.eeg_arch(in_shape,
-                                    mod_name=mod_names[0],
-                                    classes=num_classes, 
-                                    is_unimodal=True)
     else:
-        model = mega_model.unimodal_Kfold(in_shape,
+        model = mega_model_kfold.unimodal_Kfold(in_shape,
                                     mod_name=mod_names[0],
                                     classes=num_classes, 
                                     is_unimodal=True)
-
-    mod_1 = inspect.getsource(mega_model.unimodal_Kfold)
+        mod_1 = inspect.getsource(mega_model_kfold.unimodal_Kfold)
     
-    model.compile(optimizer=opt, loss=focal_loss_fx(),
+    model.compile(optimizer=opt, loss='categorical_crossentropy',
                     metrics=['acc', tfa.metrics.F1Score(num_classes=num_classes, threshold=0.5, average = 'macro')])
     
     print('Testing on {}'.format(i))
 
     hist = model.fit([X_train], y_train, epochs=300, verbose=2, shuffle=True,
-                    batch_size = 256, validation_data = ([X_test], y_test),
+                    batch_size = 512, validation_data = ([X_test], y_test),
                     callbacks=[tb, callbacks_list]) # , class_weight=wgt
     y_pred_i = model.predict([X_test], batch_size = 128)
 
@@ -150,6 +147,63 @@ def training_one_modality(mod1: list, label: list, i: int,
     model.save_weights(os.path.join(model_wgt_path, 'model_{}'.format(i)))
 
     return a, hist, roc_auc, scores, mod_1
+
+def training_two_modality(mod_data: list, label: list, i: int,
+                            tensorbrd_dir, in_shape, mod_names, save_info, num_classes):
+
+    model_arch, model_weights = save_info
+    X1_train, X2_train = mod_data[0]
+    X1_test, X2_test = mod_data[1]
+    y_train, y_test = label
+
+    opt = tf.keras.optimizers.Adamax(learning_rate = 0.0005)
+    tb = tf.keras.callbacks.TensorBoard(log_dir = os.path.join(tensorbrd_dir,
+                                                                        datetime.datetime.now().strftime("%Y%m%d-%H%M%S")))
+
+    callbacks_list = tf.keras.callbacks.EarlyStopping(monitor='val_f1_score',
+                                                        patience=30, verbose=1, mode='max', 
+                                                        restore_best_weights=True)
+
+    model = mega_model_kfold.bimodal_Kfold(in_shape,
+                                mod_name=mod_names,
+                                classes=num_classes, 
+                                is_unimodal=False)
+    mod_1 = inspect.getsource(mega_model_kfold.bimodal_Kfold)
+
+    model.compile(optimizer=opt, loss='categorical_crossentropy',
+                  metrics=['acc', tfa.metrics.F1Score(num_classes=num_classes, threshold=0.5, average = 'macro')])
+    
+    print('Testing on {}'.format(i))
+
+    hist = model.fit([X1_train, X2_train], y_train, epochs=300, verbose=2, shuffle=True,
+                    batch_size = 512, validation_data = ([X1_test, X2_test], y_test),
+                    callbacks=[tb, callbacks_list]) # , class_weight=wgt
+    y_pred_i = model.predict([X1_test, X2_test], batch_size = 128)
+
+    pred_list = list()
+    test_y = list()
+
+    for n in range(len(y_pred_i)):
+        pred_list.append(np.argmax(y_pred_i[n]))
+        test_y.append(np.argmax(y_test[n]))
+
+    gc.collect()
+
+    print(classification_report(pred_list, test_y))
+    a = classification_report(pred_list, test_y,
+                                target_names = ['Baseline', 'Stress'],
+                                output_dict=True)
+
+    roc_auc = roc_auc_score(y_test.astype('int'), y_pred_i, multi_class='ovo', average='weighted')
+    scores = {'roc_auc': roc_auc, 'pred_prob': y_pred_i,
+                'pred': pred_list, 'test_cat': y_test, 'test': test_y}
+
+    model.save(os.path.join(model_arch, 'model_{}'.format(i)))
+    model_wgt_path = os.path.join(model_weights, '_model_{}'.format(i))
+    model.save_weights(os.path.join(model_wgt_path, 'model_{}'.format(i)))
+
+    return a, hist, roc_auc, scores, mod_1
+
 
 def training_binary_modality(mod1, mod2, sub_label_ecg, i, tensorbrd_dir, in_shape, mod_names, save_info, num_classes):
 
