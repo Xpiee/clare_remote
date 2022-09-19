@@ -624,3 +624,47 @@ Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/
 Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55/sasquatch.tensorflow_stats.pb
 Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55/sasquatch.kernel_stats.pb
 
+12/12 - 6s - loss: 4.8604 - acc: 0.5604 - f1_score: 0.5471 - val_loss: 4.3126 - val_acc: 0.5272 - val_f1_score: 0.5204
+Epoch 2/300
+12/12 - 3s - loss: 3.9362 - acc: 0.5843 - f1_score: 0.5733 - val_loss: 3.5490 - val_acc: 0.5408 - val_f1_score: 0.5377
+Epoch 3/300
+12/12 - 3s - loss: 3.2742 - acc: 0.6093 - f1_score: 0.5997 - val_loss: 2.9822 - val_acc: 0.6057 - val_f1_score: 0.5478
+Epoch 4/300
+12/12 - 3s - loss: 2.7872 - acc: 0.6344 - f1_score: 0.6294 - val_loss: 2.5551 - val_acc: 0.6752 - val_f1_score: 0.6526
+Epoch 5/300
+12/12 - 3s - loss: 2.4272 - acc: 0.6506 - f1_score: 0.6478 - val_loss: 2.2242 - val_acc: 0.7069 - val_f1_score: 0.6989
+Epoch 6/300
+12/12 - 3s - loss: 2.1732 - acc: 0.6600 - f1_score: 0.6583 - val_loss: 2.0215 - val_acc: 0.6767 - val_f1_score: 0.6503
+Epoch 7/300
+12/12 - 3s - loss: 1.9693 - acc: 0.6668 - f1_score: 0.6635 - val_loss: 1.8201 - val_acc: 0.6994 - val_f1_score: 0.6847
+Epoch 8/300
+12/12 - 3s - loss: 1.7887 - acc: 0.6959 - f1_score: 0.6944 - val_loss: 1.6647 - val_acc: 0.7145 - val_f1_score: 0.6966
+Epoch 9/300
+12/12 - 3s - loss: 1.6680 - acc: 0.7019 - f1_score: 0.7012 - val_loss: 1.5330 - val_acc: 0.7719 - val_f1_score: 0.7665
+Epoch 10/300
+12/12 - 3s - loss: 1.5603 - acc: 0.7170 - f1_score: 0.7143 - val_loss: 1.4255 - val_acc: 0.8082 - val_f1_score: 0.8071
+Epoch 11/300
+12/12 - 3s - loss: 1.4639 - acc: 0.7264 - f1_score: 0.7256 - val_loss: 1.3553 - val_acc: 0.7523 - val_f1_score: 0.7392
+Epoch 12/300
+12/12 - 3s - loss: 1.3913 - acc: 0.7239 - f1_score: 0.7228 - val_loss: 1.2456 - val_acc: 0.8142 - val_f1_score: 0.8118
+Epoch 13/300
+12/12 - 3s - loss: 1.3299 - acc: 0.7360 - f1_score: 0.7337 - val_loss: 1.2160 - val_acc: 0.8051 - val_f1_score: 0.8045
+Epoch 14/300
+12/12 - 3s - loss: 1.2843 - acc: 0.7356 - f1_score: 0.7330 - val_loss: 1.1689 - val_acc: 0.7961 - val_f1_score: 0.7890
+Epoch 15/300
+12/12 - 3s - loss: 1.2255 - acc: 0.7508 - f1_score: 0.7483 - val_loss: 1.1084 - val_acc: 0.7764 - val_f1_score: 0.7629
+Epoch 16/300
+12/12 - 3s - loss: 1.1773 - acc: 0.7613 - f1_score: 0.7589 - val_loss: 1.0374 - val_acc: 0.8640 - val_f1_score: 0.8634
+Epoch 17/300
+12/12 - 3s - loss: 1.1393 - acc: 0.7652 - f1_score: 0.7634 - val_loss: 1.0063 - val_acc: 0.8716 - val_f1_score: 0.8714
+Epoch 18/300
+12/12 - 3s - loss: 1.1154 - acc: 0.7630 - f1_score: 0.7618 - val_loss: 1.0149 - val_acc: 0.7885 - val_f1_score: 0.7816
+Epoch 19/300
+12/12 - 3s - loss: 1.0941 - acc: 0.7580 - f1_score: 0.7552 - val_loss: 0.9972 - val_acc: 0.8535 - val_f1_score: 0.8534
+Epoch 20/300
+12/12 - 3s - loss: 1.0657 - acc: 0.7692 - f1_score: 0.7675 - val_loss: 0.9380 - val_acc: 0.8746 - val_f1_score: 0.8741
+Epoch 21/300
+12/12 - 3s - loss: 1.0312 - acc: 0.7828 - f1_score: 0.7819 - val_loss: 0.9330 - val_acc: 0.8051 - val_f1_score: 0.7997
+Epoch 22/300
+12/12 - 3s - loss: 1.0228 - acc: 0.7774 - f1_score: 0.7764 - val_loss: 1.0413 - val_acc: 0.7100 - val_f1_score: 0.6686
+Epoch 23/300
