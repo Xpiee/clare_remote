@@ -571,3 +571,56 @@ Epoch 73/300
 Epoch 74/300
 12/12 - 3s - loss: 0.6964 - acc: 0.8394 - f1_score: 0.8390 - val_loss: 0.8156 - val_acc: 0.7855 - val_f1_score: 0.7853
 Epoch 75/300
+12/12 - 3s - loss: 0.6772 - acc: 0.8483 - f1_score: 0.8481 - val_loss: 0.7848 - val_acc: 0.8051 - val_f1_score: 0.8037
+Epoch 76/300
+12/12 - 3s - loss: 0.6714 - acc: 0.8513 - f1_score: 0.8508 - val_loss: 0.8772 - val_acc: 0.7674 - val_f1_score: 0.7673
+Epoch 77/300
+12/12 - 3s - loss: 0.6690 - acc: 0.8493 - f1_score: 0.8489 - val_loss: 0.8423 - val_acc: 0.7779 - val_f1_score: 0.7778
+Epoch 78/300
+12/12 - 3s - loss: 0.6599 - acc: 0.8521 - f1_score: 0.8519 - val_loss: 0.8339 - val_acc: 0.7613 - val_f1_score: 0.7612
+Epoch 79/300
+12/12 - 3s - loss: 0.6639 - acc: 0.8481 - f1_score: 0.8479 - val_loss: 0.7996 - val_acc: 0.8097 - val_f1_score: 0.8030
+Epoch 80/300
+12/12 - 3s - loss: 0.6649 - acc: 0.8449 - f1_score: 0.8443 - val_loss: 0.7871 - val_acc: 0.7915 - val_f1_score: 0.7909
+Epoch 81/300
+12/12 - 3s - loss: 0.6488 - acc: 0.8540 - f1_score: 0.8536 - val_loss: 0.8046 - val_acc: 0.7976 - val_f1_score: 0.7961
+Epoch 82/300
+12/12 - 3s - loss: 0.6313 - acc: 0.8652 - f1_score: 0.8649 - val_loss: 0.8342 - val_acc: 0.7704 - val_f1_score: 0.7696
+Epoch 83/300
+12/12 - 3s - loss: 0.6984 - acc: 0.8199 - f1_score: 0.8195 - val_loss: 0.7737 - val_acc: 0.7946 - val_f1_score: 0.7910
+Restoring model weights from the end of the best epoch.
+Epoch 00083: early stopping
+              precision    recall  f1-score   support
+
+           0       0.71      0.89      0.79       248
+           1       0.92      0.78      0.84       414
+
+    accuracy                           0.82       662
+   macro avg       0.81      0.83      0.82       662
+weighted avg       0.84      0.82      0.82       662
+
+2022-09-19 00:46:51.999953: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-19 00:46:52.000006: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-19 00:46:52.000079: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-19 00:46:52.000095: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+(None, 2560, 1)
+(None, 2560, 3)
+(None, 2560, 4)
+Testing on 3
+Epoch 1/300
+2022-09-19 00:46:55.643777: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-09-19 00:46:55.643827: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-09-19 00:46:55.643904: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1415] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI_ERROR_NOT_INITIALIZED
+2022-09-19 00:46:55.952347: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2022-09-19 00:46:55.959178: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 0 callback api events and 0 activity events. 
+2022-09-19 00:46:55.972244: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-09-19 00:46:55.980700: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55
+2022-09-19 00:46:55.983953: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55/sasquatch.trace.json.gz
+2022-09-19 00:46:56.018735: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55
+2022-09-19 00:46:56.029077: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55/sasquatch.memory_profile.json.gz
+2022-09-19 00:46:56.046265: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55Dumped tool data for xplane.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55/sasquatch.xplane.pb
+Dumped tool data for overview_page.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55/sasquatch.overview_page.pb
+Dumped tool data for input_pipeline.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55/sasquatch.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55/sasquatch.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /home/18ab106/pfiles/clare/Data_files/experiment_20220919-003557/t_b/20220919-004651/train/plugins/profile/2022_09_19_00_46_55/sasquatch.kernel_stats.pb
+

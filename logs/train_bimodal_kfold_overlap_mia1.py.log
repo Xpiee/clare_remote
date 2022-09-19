@@ -636,3 +636,39 @@ Epoch 45/300
 Epoch 46/300
 12/12 - 2s - loss: 0.7404 - acc: 0.7746 - f1_score: 0.7740 - val_loss: 0.7987 - val_acc: 0.7009 - val_f1_score: 0.6645
 Epoch 47/300
+12/12 - 2s - loss: 0.7172 - acc: 0.7897 - f1_score: 0.7887 - val_loss: 0.7102 - val_acc: 0.7976 - val_f1_score: 0.7953
+Epoch 48/300
+12/12 - 2s - loss: 0.6818 - acc: 0.8115 - f1_score: 0.8107 - val_loss: 0.6917 - val_acc: 0.8172 - val_f1_score: 0.8164
+Epoch 49/300
+12/12 - 2s - loss: 0.6694 - acc: 0.8155 - f1_score: 0.8148 - val_loss: 0.6946 - val_acc: 0.8233 - val_f1_score: 0.8223
+Epoch 50/300
+12/12 - 2s - loss: 0.6692 - acc: 0.8179 - f1_score: 0.8175 - val_loss: 0.7252 - val_acc: 0.7659 - val_f1_score: 0.7511
+Epoch 51/300
+12/12 - 2s - loss: 0.6577 - acc: 0.8211 - f1_score: 0.8205 - val_loss: 0.7396 - val_acc: 0.7810 - val_f1_score: 0.7742
+Epoch 52/300
+12/12 - 2s - loss: 0.6527 - acc: 0.8226 - f1_score: 0.8219 - val_loss: 0.7066 - val_acc: 0.8172 - val_f1_score: 0.8146
+Epoch 53/300
+12/12 - 2s - loss: 0.6170 - acc: 0.8444 - f1_score: 0.8440 - val_loss: 0.6969 - val_acc: 0.7885 - val_f1_score: 0.7827
+Epoch 54/300
+12/12 - 2s - loss: 0.6184 - acc: 0.8387 - f1_score: 0.8383 - val_loss: 0.7047 - val_acc: 0.7961 - val_f1_score: 0.7916
+Epoch 55/300
+12/12 - 2s - loss: 0.6067 - acc: 0.8478 - f1_score: 0.8474 - val_loss: 0.7910 - val_acc: 0.7462 - val_f1_score: 0.7250
+Epoch 56/300
+12/12 - 2s - loss: 0.6115 - acc: 0.8417 - f1_score: 0.8413 - val_loss: 0.7188 - val_acc: 0.7915 - val_f1_score: 0.7915
+Epoch 57/300
+12/12 - 2s - loss: 0.5709 - acc: 0.8672 - f1_score: 0.8670 - val_loss: 0.7153 - val_acc: 0.7915 - val_f1_score: 0.7858
+Epoch 58/300
+12/12 - 2s - loss: 0.5674 - acc: 0.8669 - f1_score: 0.8666 - val_loss: 0.6961 - val_acc: 0.8021 - val_f1_score: 0.7997
+Epoch 59/300
+12/12 - 2s - loss: 0.5275 - acc: 0.8886 - f1_score: 0.8883 - val_loss: 0.7308 - val_acc: 0.7961 - val_f1_score: 0.7930
+Epoch 60/300
+12/12 - 2s - loss: 0.5454 - acc: 0.8760 - f1_score: 0.8757 - val_loss: 0.7454 - val_acc: 0.7885 - val_f1_score: 0.7834
+Epoch 61/300
+12/12 - 2s - loss: 0.5961 - acc: 0.8463 - f1_score: 0.8461 - val_loss: 0.7275 - val_acc: 0.7779 - val_f1_score: 0.7779
+Epoch 62/300
+12/12 - 2s - loss: 0.5087 - acc: 0.8990 - f1_score: 0.8988 - val_loss: 0.7333 - val_acc: 0.7825 - val_f1_score: 0.7804
+Epoch 63/300
+12/12 - 2s - loss: 0.4811 - acc: 0.9119 - f1_score: 0.9117 - val_loss: 0.7392 - val_acc: 0.7991 - val_f1_score: 0.7984
+Epoch 64/300
+12/12 - 2s - loss: 0.4744 - acc: 0.9095 - f1_score: 0.9094 - val_loss: 0.9154 - val_acc: 0.7311 - val_f1_score: 0.7287
+Epoch 65/300
