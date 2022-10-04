@@ -218,3 +218,4 @@ for comb in num_combinations:
     print('Classfication report for Type {}, Stage {}'.format('ff', 'ff'))    
     score_class(clr)
     print("--------------------------------------------------------------------------")
+    
