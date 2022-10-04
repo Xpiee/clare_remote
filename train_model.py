@@ -69,6 +69,7 @@ import neurokit2 as nk
 from statistics import mean, mode, StatisticsError
 from sklearn.preprocessing import MinMaxScaler
 
+from time import time
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -314,7 +315,7 @@ def training_three_modality(mod1, mod2, mod3, sub_label_ecg, i, tensorbrd_dir, i
     return a, hist, roc_auc, scores, mod_1
 
 
-def training_four_modality(mod1, mod2, mod3, mod4, sub_label_ecg, i, tensorbrd_dir, in_shape, mod_names, save_info, num_classes):
+def training_four_modality(mod1, mod2, mod3, mod4, sub_label_ecg, i, tensorbrd_dir, in_shape, mod_names, save_info, num_classes, inference_time=False):
 
     model_arch, model_weights = save_info
 
@@ -368,11 +369,19 @@ def training_four_modality(mod1, mod2, mod3, mod4, sub_label_ecg, i, tensorbrd_d
     
     model.compile(optimizer=opt, loss=focal_loss_fx(), metrics=['acc', tfa.metrics.F1Score(num_classes=num_classes, threshold=0.5, average = 'macro')])
     print('Testing on {}'.format(i))
+    if inference_time:
+        batch_size = 1
+    else: batch_size = 128
 
     hist = model.fit([X_1, X_2, X_3, X_4], y, epochs=300, verbose=2, shuffle=True,
                     batch_size = 256, validation_data = ([X_test_1, X_test_2, X_test_3, X_test_4], y_test),
                     callbacks=[tb, callbacks_list]) # , class_weight=wgt
-    y_pred_i = model.predict([X_test_1, X_test_2, X_test_3, X_test_4], batch_size = 128)
+    
+    start_time = time()
+    y_pred_i = model.predict([X_test_1, X_test_2, X_test_3, X_test_4], batch_size = batch_size) # inference time calculation
+    end_time = time()
+
+    inference_T = (end_time - start_time)/X_test_1.shape[0]
 
     pred_list = list()
     test_y = list()
@@ -392,11 +401,15 @@ def training_four_modality(mod1, mod2, mod3, mod4, sub_label_ecg, i, tensorbrd_d
     scores = {'roc_auc': roc_auc, 'pred_prob': y_pred_i,
                 'pred': pred_list, 'test_cat': y_test, 'test': test_y}
 
-    # clr[i] = a
-    # hs[i] = hist
+#    # clr[i] = a
+#    # hs[i] = hist
 
-    model.save(os.path.join(model_arch, 'model_{}'.format(i)))
-    model_wgt_path = os.path.join(model_weights, '_model_{}'.format(i))
-    model.save_weights(os.path.join(model_wgt_path, 'model_{}'.format(i)))
+    # model.save(os.path.join(model_arch, 'model_{}'.format(i)))
+    # model_wgt_path = os.path.join(model_weights, '_model_{}'.format(i))
+    # model.save_weights(os.path.join(model_wgt_path, 'model_{}'.format(i)))
 
-    return a, hist, roc_auc, scores, mod_1
+    
+    if inference_time:
+        return a, hist, roc_auc, scores, mod_1, inference_T
+
+    else: return a, hist, roc_auc, scores, mod_1
